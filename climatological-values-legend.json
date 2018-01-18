@@ -1,0 +1,2836 @@
+{
+	"unidad_generadora": "Servicio del Banco de Datos Nacional de Climatología",
+	"periodicidad": "1 vez al día",
+	"descripcion": "Valores normales para el período de referencia 1981-2010",
+	"formato": "application/json",
+	"copyright": "© AEMET. Autorizado el uso de la información y su reproducción citando a AEMET como autora de la misma.",
+	"notaLegal": "http://www.aemet.es/es/nota_legal",
+	"campos": [{
+		"id": "mes",
+		"descripcion": "valor entre 01,02,03,04,05,06,07,08,09,10,11,12 para indicar el mes al que se refieren los datos o 13 para indicar valor anual",
+		"tipo_datos": "string",
+		"requerido": true
+	}, {
+		"id": "indicativo",
+		"descripcion": "indicativo climatológico",
+		"tipo_datos": "string",
+		"requerido": true
+	}, {
+		"id": "e_cv",
+		"descripcion": "coeficiente de variación de Pearson para tensión de vapor media",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "e_max",
+		"descripcion": "valor máximo para tensión de vapor media (décimas hPa)",
+		"tipo_datos": "string",
+		"unidad": "(décimas hPa)",
+		"requerido": false
+	}, {
+		"id": "e_md",
+		"descripcion": "media aritmetica para tensión de vapor media (décimas hPa)",
+		"tipo_datos": "string",
+		"unidad": "(décimas hPa)",
+		"requerido": false
+	}, {
+		"id": "e_min",
+		"descripcion": "valor mínimo para tensión de vapor media (décimas hPa)",
+		"tipo_datos": "string",
+		"unidad": "(décimas hPa)",
+		"requerido": false
+	}, {
+		"id": "e_mn",
+		"descripcion": "mediana para tensión de vapor media (décimas hPa)",
+		"tipo_datos": "string",
+		"unidad": "(décimas hPa)",
+		"requerido": false
+	}, {
+		"id": "e_n",
+		"descripcion": "frecuencia absoluta (número de días para los que hay valor) para tensión de vapor media",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "e_q1",
+		"descripcion": "primer quintil para tensión de vapor media (décimas hPa)",
+		"tipo_datos": "string",
+		"unidad": "(décimas hPa)",
+		"requerido": false
+	}, {
+		"id": "e_q2",
+		"descripcion": "segundo quintil para tensión de vapor media (décimas hPa)",
+		"tipo_datos": "string",
+		"unidad": "(décimas hPa)",
+		"requerido": false
+	}, {
+		"id": "e_q3",
+		"descripcion": "tercer quintil para tensión de vapor media (décimas hPa)",
+		"tipo_datos": "string",
+		"unidad": "(décimas hPa)",
+		"requerido": false
+	}, {
+		"id": "e_q4",
+		"descripcion": "cuarto quintil para tensión de vapor media (décimas hPa)",
+		"tipo_datos": "string",
+		"unidad": "(décimas hPa)",
+		"requerido": false
+	}, {
+		"id": "e_s",
+		"descripcion": "desviación típica para tensión de vapor media (décimas hPa)",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "evap_cv",
+		"descripcion": "coeficiente de variación de Pearson para Evaporación total mensual/anual (décimas de mm)",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "evap_max",
+		"descripcion": "valor máximo para Evaporación total mensual/anual (décimas de mm)",
+		"tipo_datos": "string",
+		"unidad": "(décimas hPa)",
+		"requerido": false
+	}, {
+		"id": "evap_md",
+		"descripcion": "media aritmetica para Evaporación total mensual/anual (décimas de mm)",
+		"tipo_datos": "string",
+		"unidad": "(décimas hPa)",
+		"requerido": false
+	}, {
+		"id": "evap_min",
+		"descripcion": "valor mínimo para Evaporación total mensual/anual (décimas de mm)",
+		"tipo_datos": "string",
+		"unidad": "(décimas hPa)",
+		"requerido": false
+	}, {
+		"id": "evap_mn",
+		"descripcion": "mediana para Evaporación total mensual/anual (décimas de mm)",
+		"tipo_datos": "string",
+		"unidad": "(décimas hPa)",
+		"requerido": false
+	}, {
+		"id": "evap_n",
+		"descripcion": "frecuencia absoluta (número de días para los que hay valor) para Evaporación total mensual/anual (décimas de mm)",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "evap_q1",
+		"descripcion": "primer quintil para Evaporación total mensual/anual (décimas de mm)",
+		"tipo_datos": "string",
+		"unidad": "(décimas hPa)",
+		"requerido": false
+	}, {
+		"id": "evap_q2",
+		"descripcion": "segundo quintil para Evaporación total mensual/anual (décimas de mm)",
+		"tipo_datos": "string",
+		"unidad": "(décimas hPa)",
+		"requerido": false
+	}, {
+		"id": "evap_q3",
+		"descripcion": "tercer quintil para Evaporación total mensual/anual (décimas de mm)",
+		"tipo_datos": "string",
+		"unidad": "(décimas hPa)",
+		"requerido": false
+	}, {
+		"id": "evap_q4",
+		"descripcion": "cuarto quintil para Evaporación total mensual/anual (décimas de mm)",
+		"tipo_datos": "string",
+		"unidad": "(décimas hPa)",
+		"requerido": false
+	}, {
+		"id": "evap_s",
+		"descripcion": "desviación típica para Evaporación total mensual/anual (décimas de mm)",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "glo_cv",
+		"descripcion": "coeficiente de variación de Pearson para Radiación global mensual/anual (decenas de Kj.m-2)",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "glo_max",
+		"descripcion": "valor máximo para Radiación global mensual/anual (decenas de Kj.m-2)",
+		"tipo_datos": "string",
+		"unidad": "(decenas de Kj.m-2)",
+		"requerido": false
+	}, {
+		"id": "glo_md",
+		"descripcion": "media aritmetica para Radiación global mensual/anual (decenas de Kj.m-2)",
+		"tipo_datos": "string",
+		"unidad": "(decenas de Kj.m-2)",
+		"requerido": false
+	}, {
+		"id": "glo_min",
+		"descripcion": "valor mínimo para Radiación global mensual/anual (decenas de Kj.m-2)",
+		"tipo_datos": "string",
+		"unidad": "(decenas de Kj.m-2)",
+		"requerido": false
+	}, {
+		"id": "glo_mn",
+		"descripcion": "mediana para Radiación global mensual/anual (decenas de Kj.m-2)",
+		"tipo_datos": "string",
+		"unidad": "(decenas de Kj.m-2)",
+		"requerido": false
+	}, {
+		"id": "glo_n",
+		"descripcion": "frecuencia absoluta (número de días para los que hay valor) para Radiación global mensual/anual (decenas de Kj.m-2)",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "glo_q1",
+		"descripcion": "primer quintil para Radiación global mensual/anual (decenas de Kj.m-2)",
+		"tipo_datos": "string",
+		"unidad": "(decenas de Kj.m-2)",
+		"requerido": false
+	}, {
+		"id": "glo_q2",
+		"descripcion": "segundo quintil para Radiación global mensual/anual (decenas de Kj.m-2)",
+		"tipo_datos": "string",
+		"unidad": "(decenas de Kj.m-2)",
+		"requerido": false
+	}, {
+		"id": "glo_q3",
+		"descripcion": "tercer quintil para Radiación global mensual/anual (decenas de Kj.m-2)",
+		"tipo_datos": "string",
+		"unidad": "(decenas de Kj.m-2)",
+		"requerido": false
+	}, {
+		"id": "glo_q4",
+		"descripcion": "cuarto quintil para Radiación global mensual/anual (decenas de Kj.m-2)",
+		"tipo_datos": "string",
+		"unidad": "(decenas de Kj.m-2)",
+		"requerido": false
+	}, {
+		"id": "glo_s",
+		"descripcion": "desviación típica para Radiación global mensual/anual (decenas de Kj.m-2)",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "hr_cv",
+		"descripcion": "coeficiente de variación de Pearson para Humedad relativa media mensual/anual (%)",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "hr_max",
+		"descripcion": "valor máximo para Humedad relativa media mensual/anual (%)",
+		"tipo_datos": "string",
+		"unidad": "(%)",
+		"requerido": false
+	}, {
+		"id": "hr_md",
+		"descripcion": "media aritmetica para Humedad relativa media mensual/anual (%)",
+		"tipo_datos": "string",
+		"unidad": "(%)",
+		"requerido": false
+	}, {
+		"id": "hr_min",
+		"descripcion": "valor mínimo para Humedad relativa media mensual/anual (%)",
+		"tipo_datos": "string",
+		"unidad": "(%)",
+		"requerido": false
+	}, {
+		"id": "hr_mn",
+		"descripcion": "mediana para Humedad relativa media mensual/anual (%)",
+		"tipo_datos": "string",
+		"unidad": "(%)",
+		"requerido": false
+	}, {
+		"id": "hr_n",
+		"descripcion": "frecuencia absoluta (número de días para los que hay valor) para Humedad relativa media mensual/anual (%)",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "hr_q1",
+		"descripcion": "primer quintil para Humedad relativa media mensual/anual (%)",
+		"tipo_datos": "string",
+		"unidad": "(%)",
+		"requerido": false
+	}, {
+		"id": "hr_q2",
+		"descripcion": "segundo quintil para Humedad relativa media mensual/anual (%)",
+		"tipo_datos": "string",
+		"unidad": "(%)",
+		"requerido": false
+	}, {
+		"id": "hr_q3",
+		"descripcion": "tercer quintil para Humedad relativa media mensual/anual (%)",
+		"tipo_datos": "string",
+		"unidad": "(%)",
+		"requerido": false
+	}, {
+		"id": "hr_q4",
+		"descripcion": "cuarto quintil para Humedad relativa media mensual/anual (%)",
+		"tipo_datos": "string",
+		"unidad": "(%)",
+		"requerido": false
+	}, {
+		"id": "hr_s",
+		"descripcion": "desviación típica para Humedad relativa media mensual/anual (%)",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "inso_cv",
+		"descripcion": "coeficiente de variación de Pearson para Media mensual/anual de la insolación diaria (horas)",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "inso_max",
+		"descripcion": "valor máximo para Media mensual/anual de la insolación diaria (horas)",
+		"tipo_datos": "string",
+		"unidad": "horas",
+		"requerido": false
+	}, {
+		"id": "inso_md",
+		"descripcion": "media aritmetica para Media mensual/anual de la insolación diaria (horas)",
+		"tipo_datos": "string",
+		"unidad": "horas",
+		"requerido": false
+	}, {
+		"id": "inso_min",
+		"descripcion": "valor mínimo para Media mensual/anual de la insolación diaria (horas)",
+		"tipo_datos": "string",
+		"unidad": "horas",
+		"requerido": false
+	}, {
+		"id": "inso_mn",
+		"descripcion": "mediana para Media mensual/anual de la insolación diaria (horas)",
+		"tipo_datos": "string",
+		"unidad": "horas",
+		"requerido": false
+	}, {
+		"id": "inso_n",
+		"descripcion": "frecuencia absoluta (número de días para los que hay valor) para Media mensual/anual de la insolación diaria (horas)",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "inso_q1",
+		"descripcion": "primer quintil para Media mensual/anual de la insolación diaria (horas)",
+		"tipo_datos": "string",
+		"unidad": "horas",
+		"requerido": false
+	}, {
+		"id": "inso_q2",
+		"descripcion": "segundo quintil para Media mensual/anual de la insolación diaria (horas)",
+		"tipo_datos": "string",
+		"unidad": "horas",
+		"requerido": false
+	}, {
+		"id": "inso_q3",
+		"descripcion": "tercer quintil para Media mensual/anual de la insolación diaria (horas)",
+		"tipo_datos": "string",
+		"unidad": "horas",
+		"requerido": false
+	}, {
+		"id": "inso_q4",
+		"descripcion": "cuarto quintil para Media mensual/anual de la insolación diaria (horas)",
+		"tipo_datos": "string",
+		"unidad": "horas",
+		"requerido": false
+	}, {
+		"id": "inso_s",
+		"descripcion": "desviación típica para Media mensual/anual de la insolación diaria (horas)",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "n_cub_cv",
+		"descripcion": "coeficiente de variación de Pearson para Nº de días cubiertos en el mes/año",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "n_cub_max",
+		"descripcion": "valor máximo para Nº de días cubiertos en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "horas",
+		"requerido": false
+	}, {
+		"id": "n_cub_md",
+		"descripcion": "media aritmetica para Nº de días cubiertos en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "n_cub_min",
+		"descripcion": "valor mínimo para Nº de días cubiertos en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "n_cub_mn",
+		"descripcion": "mediana para Nº de días cubiertos en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "n_cub_n",
+		"descripcion": "frecuencia absoluta (número de días para los que hay valor) para Nº de días cubiertos en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "n_cub_q1",
+		"descripcion": "primer quintil para Nº de días cubiertos en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "n_cub_q2",
+		"descripcion": "segundo quintil para Nº de días cubiertos en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "n_cub_q3",
+		"descripcion": "tercer quintil para Nº de días cubiertos en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "n_cub_q4",
+		"descripcion": "cuarto quintil para Nº de días cubiertos en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "n_cub_s",
+		"descripcion": "desviación típica para Nº de días cubiertos en el mes/año",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "n_fog_cv",
+		"descripcion": "coeficiente de variación de Pearson para  Nº de días de niebla en el mes/año",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "n_fog_max",
+		"descripcion": "valor máximo para  Nº de días de niebla en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "n_fog_md",
+		"descripcion": "media aritmetica para  Nº de días de niebla en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "n_fog_min",
+		"descripcion": "valor mínimo para  Nº de días de niebla en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "n_fog_mn",
+		"descripcion": "mediana para  Nº de días de niebla en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "n_fog_n",
+		"descripcion": "frecuencia absoluta (número de días para los que hay valor) para  Nº de días de niebla en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "n_fog_q1",
+		"descripcion": "primer quintil para  Nº de días de niebla en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "n_fog_q2",
+		"descripcion": "segundo quintil para  Nº de días de niebla en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "n_fog_q3",
+		"descripcion": "tercer quintil para  Nº de días de niebla en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "n_fog_q4",
+		"descripcion": "cuarto quintil para  Nº de días de niebla en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "n_fog_s",
+		"descripcion": "desviación típica para  Nº de días de niebla en el mes/año",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "n_gra_cv",
+		"descripcion": "coeficiente de variación de Pearson para  Nº de días de granizo en el mes/año",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "n_gra_max",
+		"descripcion": "valor máximo para  Nº de días de granizo en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "n_gra_md",
+		"descripcion": "media aritmetica para  Nº de días de granizo en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "n_gra_min",
+		"descripcion": "valor mínimo para  Nº de días de granizo en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "n_gra_mn",
+		"descripcion": "mediana para  Nº de días de granizo en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "n_gra_n",
+		"descripcion": "frecuencia absoluta (número de días para los que hay valor) para  Nº de días de granizo en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "n_gra_q1",
+		"descripcion": "primer quintil para  Nº de días de granizo en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "n_gra_q2",
+		"descripcion": "segundo quintil para  Nº de días de granizo en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "n_gra_q3",
+		"descripcion": "tercer quintil para  Nº de días de granizo en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "n_gra_q4",
+		"descripcion": "cuarto quintil para  Nº de días de granizo en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "n_gra_s",
+		"descripcion": "desviación típica para  Nº de días de granizo en el mes/año",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "n_llu_cv",
+		"descripcion": "coeficiente de variación de Pearson para Nº de días de lluvia en el mes/año",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "n_llu_max",
+		"descripcion": "valor máximo para Nº de días de lluvia en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "n_llu_md",
+		"descripcion": "media aritmetica para Nº de días de lluvia en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "n_llu_min",
+		"descripcion": "valor mínimo para Nº de días de lluvia en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "n_llu_mn",
+		"descripcion": "mediana para Nº de días de lluvia en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "n_llu_n",
+		"descripcion": "frecuencia absoluta (número de días para los que hay valor) para Nº de días de lluvia en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "n_llu_q1",
+		"descripcion": "primer quintil para Nº de días de lluvia en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "n_llu_q2",
+		"descripcion": "segundo quintil para Nº de días de lluvia en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "n_llu_q3",
+		"descripcion": "tercer quintil para Nº de días de lluvia en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "n_llu_q4",
+		"descripcion": "cuarto quintil para Nº de días de lluvia en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "n_llu_s",
+		"descripcion": "desviación típica para Nº de días de lluvia en el mes/año",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "n_nie_cv",
+		"descripcion": "coeficiente de variación de Pearson para Nº de días de nieve en el mes/año",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "n_nie_max",
+		"descripcion": "valor máximo para Nº de días de nieve en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "n_nie_md",
+		"descripcion": "media aritmetica para Nº de días de nieve en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "n_nie_min",
+		"descripcion": "valor mínimo para Nº de días de nieve en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "n_nie_mn",
+		"descripcion": "mediana para Nº de días de nieve en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "n_nie_n",
+		"descripcion": "frecuencia absoluta (número de días para los que hay valor) para Nº de días de nieve en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "n_nie_q1",
+		"descripcion": "primer quintil para Nº de días de nieve en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "n_nie_q2",
+		"descripcion": "segundo quintil para Nº de días de nieve en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "n_nie_q3",
+		"descripcion": "tercer quintil para Nº de días de nieve en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "n_nie_q4",
+		"descripcion": "cuarto quintil para Nº de días de nieve en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "n_nie_s",
+		"descripcion": "desviación típica para Nº de días de nieve en el mes/año",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "n_nub_cv",
+		"descripcion": "coeficiente de variación de Pearson para Nº de días nubosos en el mes/año",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "n_nub_max",
+		"descripcion": "valor máximo para Nº de días nubosos en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "n_nub_md",
+		"descripcion": "media aritmetica para Nº de días nubosos en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "n_nub_min",
+		"descripcion": "valor mínimo para Nº de días nubosos en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "n_nub_mn",
+		"descripcion": "mediana para Nº de días nubosos en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "n_nub_n",
+		"descripcion": "frecuencia absoluta (número de días para los que hay valor) para Nº de días nubosos en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "n_nub_q1",
+		"descripcion": "primer quintil para Nº de días nubosos en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "n_nub_q2",
+		"descripcion": "segundo quintil para Nº de días nubosos en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "n_nub_q3",
+		"descripcion": "tercer quintil para Nº de días nubosos en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "n_nub_q4",
+		"descripcion": "cuarto quintil para Nº de días nubosos en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "n_nub_s",
+		"descripcion": "desviación típica para Nº de días nubosos en el mes/año",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "np_001_cv",
+		"descripcion": "coeficiente de variación de Pearson para Nº de días de precipitación apreciable (>=0,1 mm) en el mes/año",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "np_001_max",
+		"descripcion": "valor máximo para Nº de días de precipitación apreciable (>=0,1 mm) en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "np_001_md",
+		"descripcion": "media aritmetica para Nº de días de precipitación apreciable (>=0,1 mm) en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "np_001_min",
+		"descripcion": "valor mínimo para Nº de días de precipitación apreciable (>=0,1 mm) en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "np_001_mn",
+		"descripcion": "mediana para Nº de días de precipitación apreciable (>=0,1 mm) en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "np_001_n",
+		"descripcion": "frecuencia absoluta (número de días para los que hay valor) para Nº de días de precipitación apreciable (>=0,1 mm) en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "np_001_q1",
+		"descripcion": "primer quintil para Nº de días de precipitación apreciable (>=0,1 mm) en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "np_001_q2",
+		"descripcion": "segundo quintil para Nº de días de precipitación apreciable (>=0,1 mm) en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "np_001_q3",
+		"descripcion": "tercer quintil para Nº de días de precipitación apreciable (>=0,1 mm) en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "np_001_q4",
+		"descripcion": "cuarto quintil para Nº de días de precipitación apreciable (>=0,1 mm) en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "np_001_s",
+		"descripcion": "desviación típica para Nº de días de precipitación apreciable (>=0,1 mm) en el mes/año",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "np_010_cv",
+		"descripcion": "coeficiente de variación de Pearson para Nº de días de precipitación mayor o igual que 1mm en el mes/año",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "np_010_max",
+		"descripcion": "valor máximo para Nº de días de precipitación mayor o igual que 1mm en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "np_010_md",
+		"descripcion": "media aritmetica para Nº de días de precipitación mayor o igual que 1mm en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "np_010_min",
+		"descripcion": "valor mínimo para Nº de días de precipitación mayor o igual que 1mm en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "np_010_mn",
+		"descripcion": "mediana para Nº de días de precipitación mayor o igual que 1mm en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "np_010_n",
+		"descripcion": "frecuencia absoluta (número de días para los que hay valor) para Nº de días de precipitación mayor o igual que 1mm en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "np_010_q1",
+		"descripcion": "primer quintil para Nº de días de precipitación mayor o igual que 1mm en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "np_010_q2",
+		"descripcion": "segundo quintil para Nº de días de precipitación mayor o igual que 1mm en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "np_010_q3",
+		"descripcion": "tercer quintil para Nº de días de precipitación mayor o igual que 1mm en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "np_010_q4",
+		"descripcion": "cuarto quintil para Nº de días de precipitación mayor o igual que 1mm en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "np_010_s",
+		"descripcion": "desviación típica para Nº de días de precipitación mayor o igual que 1mm en el mes/año",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "np_100_cv",
+		"descripcion": "coeficiente de variación de Pearson para Nº de días de precipitación mayor o igual que 10mm en el mes/año",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "np_100_max",
+		"descripcion": "valor máximo para Nº de días de precipitación mayor o igual que 10mm en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "np_100_md",
+		"descripcion": "media aritmetica para Nº de días de precipitación mayor o igual que 10mm en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "np_100_min",
+		"descripcion": "valor mínimo para Nº de días de precipitación mayor o igual que 10mm en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "np_100_mn",
+		"descripcion": "mediana para Nº de días de precipitación mayor o igual que 10mm en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "np_100_n",
+		"descripcion": "frecuencia absoluta (número de días para los que hay valor) para Nº de días de precipitación mayor o igual que 10mm en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "np_100_q1",
+		"descripcion": "primer quintil para Nº de días de precipitación mayor o igual que 10mm en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "np_100_q2",
+		"descripcion": "segundo quintil para Nº de días de precipitación mayor o igual que 10mm en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "np_100_q3",
+		"descripcion": "tercer quintil para Nº de días de precipitación mayor o igual que 10mm en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "np_100_q4",
+		"descripcion": "cuarto quintil para Nº de días de precipitación mayor o igual que 10mm en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "np_100_s",
+		"descripcion": "desviación típica para Nº de días de precipitación mayor o igual que 10mm en el mes/año",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "np_300_cv",
+		"descripcion": "coeficiente de variación de Pearson para Nº de días de precipitación mayor o igual que 30mm en el mes/año",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "np_300_max",
+		"descripcion": "valor máximo para Nº de días de precipitación mayor o igual que 30mm en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "np_300_md",
+		"descripcion": "media aritmetica para Nº de días de precipitación mayor o igual que 30mm en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "np_300_min",
+		"descripcion": "valor mínimo para Nº de días de precipitación mayor o igual que 30mm en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "np_300_mn",
+		"descripcion": "mediana para Nº de días de precipitación mayor o igual que 30mm en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "np_300_n",
+		"descripcion": "frecuencia absoluta (número de días para los que hay valor) para Nº de días de precipitación mayor o igual que 30mm en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "np_300_q1",
+		"descripcion": "primer quintil para Nº de días de precipitación mayor o igual que 30mm en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "np_300_q2",
+		"descripcion": "segundo quintil para Nº de días de precipitación mayor o igual que 30mm en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "np_300_q3",
+		"descripcion": "tercer quintil para Nº de días de precipitación mayor o igual que 30mm en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "np_300_q4",
+		"descripcion": "cuarto quintil para Nº de días de precipitación mayor o igual que 30mm en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "np_300_s",
+		"descripcion": "desviación típica para Nº de días de precipitación mayor o igual que 30mm en el mes/año",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "nt_00_cv",
+		"descripcion": "coeficiente de variación de Pearson para  Nº de días de temperatura mínima menor o igual que 0 grados celsius",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "nt_00_max",
+		"descripcion": "valor máximo para  Nº de días de temperatura mínima menor o igual que 0 grados celsius",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "nt_00_md",
+		"descripcion": "media aritmetica para  Nº de días de temperatura mínima menor o igual que 0 grados celsius",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "nt_00_min",
+		"descripcion": "valor mínimo para  Nº de días de temperatura mínima menor o igual que 0 grados celsius",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "nt_00_mn",
+		"descripcion": "mediana para  Nº de días de temperatura mínima menor o igual que 0 grados celsius",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "nt_00_n",
+		"descripcion": "frecuencia absoluta (número de días para los que hay valor) para  Nº de días de temperatura mínima menor o igual que 0 grados celsius",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "nt_00_q1",
+		"descripcion": "primer quintil para  Nº de días de temperatura mínima menor o igual que 0 grados celsius",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "nt_00_q2",
+		"descripcion": "segundo quintil para  Nº de días de temperatura mínima menor o igual que 0 grados celsius",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "nt_00_q3",
+		"descripcion": "tercer quintil para  Nº de días de temperatura mínima menor o igual que 0 grados celsius",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "nt_00_q4",
+		"descripcion": "cuarto quintil para  Nº de días de temperatura mínima menor o igual que 0 grados celsius",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "nt_00_s",
+		"descripcion": "desviación típica para  Nº de días de temperatura mínima menor o igual que 0 grados celsius",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "nt_30_cv",
+		"descripcion": "coeficiente de variación de Pearson para  Nº de días de temperatura máxima mayor o igual que 30 grados celsius",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "nt_30_max",
+		"descripcion": "valor máximo para  Nº de días de temperatura máxima mayor o igual que 30 grados celsius",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "nt_30_md",
+		"descripcion": "media aritmetica para  Nº de días de temperatura máxima mayor o igual que 30 grados celsius",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "nt_30_min",
+		"descripcion": "valor mínimo para  Nº de días de temperatura máxima mayor o igual que 30 grados celsius",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "nt_30_mn",
+		"descripcion": "mediana para  Nº de días de temperatura máxima mayor o igual que 30 grados celsius",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "nt_30_n",
+		"descripcion": "frecuencia absoluta (número de días para los que hay valor) para  Nº de días de temperatura máxima mayor o igual que 30 grados celsius",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "nt_30_q1",
+		"descripcion": "primer quintil para  Nº de días de temperatura máxima mayor o igual que 30 grados celsius",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "nt_30_q2",
+		"descripcion": "segundo quintil para  Nº de días de temperatura máxima mayor o igual que 30 grados celsius",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "nt_30_q3",
+		"descripcion": "tercer quintil para  Nº de días de temperatura máxima mayor o igual que 30 grados celsius",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "nt_30_q4",
+		"descripcion": "cuarto quintil para  Nº de días de temperatura máxima mayor o igual que 30 grados celsius",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "nt_30_s",
+		"descripcion": "desviación típica para  Nº de días de temperatura máxima mayor o igual que 30 grados celsius",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "n_tor_cv",
+		"descripcion": "coeficiente de variación de Pearson para  Nº de días de tormenta en el mes/año",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "n_tor_max",
+		"descripcion": "valor máximo para  Nº de días de tormenta en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "n_tor_md",
+		"descripcion": "media aritmetica para  Nº de días de tormenta en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "n_tor_min",
+		"descripcion": "valor mínimo para  Nº de días de tormenta en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "n_tor_mn",
+		"descripcion": "mediana para  Nº de días de tormenta en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "n_tor_n",
+		"descripcion": "frecuencia absoluta (número de días para los que hay valor) para  Nº de días de tormenta en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "n_tor_q1",
+		"descripcion": "primer quintil para  Nº de días de tormenta en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "n_tor_q2",
+		"descripcion": "segundo quintil para  Nº de días de tormenta en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "n_tor_q3",
+		"descripcion": "tercer quintil para  Nº de días de tormenta en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "n_tor_q4",
+		"descripcion": "cuarto quintil para  Nº de días de tormenta en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "n_tor_s",
+		"descripcion": "desviación típica para  Nº de días de tormenta en el mes/año",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "nv_0050_cv",
+		"descripcion": "coeficiente de variación de Pearson para  Nº de días con visibilidad inferior a 50 m. en el mes/año",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "nv_0050_max",
+		"descripcion": "valor máximo para  Nº de días con visibilidad inferior a 50 m. en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "nv_0050_md",
+		"descripcion": "media aritmetica para  Nº de días con visibilidad inferior a 50 m. en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "nv_0050_min",
+		"descripcion": "valor mínimo para  Nº de días con visibilidad inferior a 50 m. en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "nv_0050_mn",
+		"descripcion": "mediana para  Nº de días con visibilidad inferior a 50 m. en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "nv_0050_n",
+		"descripcion": "frecuencia absoluta (número de días para los que hay valor) para  Nº de días con visibilidad inferior a 50 m. en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "nv_0050_q1",
+		"descripcion": "primer quintil para  Nº de días con visibilidad inferior a 50 m. en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "nv_0050_q2",
+		"descripcion": "segundo quintil para  Nº de días con visibilidad inferior a 50 m. en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "nv_0050_q3",
+		"descripcion": "tercer quintil para  Nº de días con visibilidad inferior a 50 m. en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "nv_0050_q4",
+		"descripcion": "cuarto quintil para  Nº de días con visibilidad inferior a 50 m. en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "nv_0050_s",
+		"descripcion": "desviación típica para  Nº de días con visibilidad inferior a 50 m. en el mes/año",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "nv_0100_cv",
+		"descripcion": "coeficiente de variación de Pearson para   Nº de días con visibilidad superior o igual a 50 m. e inferior a 100 m. en el mes/año",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "nv_0100_max",
+		"descripcion": "valor máximo para   Nº de días con visibilidad superior o igual a 50 m. e inferior a 100 m. en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "nv_0100_md",
+		"descripcion": "media aritmetica para   Nº de días con visibilidad superior o igual a 50 m. e inferior a 100 m. en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "nv_0100_min",
+		"descripcion": "valor mínimo para   Nº de días con visibilidad superior o igual a 50 m. e inferior a 100 m. en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "nv_0100_mn",
+		"descripcion": "mediana para   Nº de días con visibilidad superior o igual a 50 m. e inferior a 100 m. en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "nv_0100_n",
+		"descripcion": "frecuencia absoluta (número de días para los que hay valor) para   Nº de días con visibilidad superior o igual a 50 m. e inferior a 100 m. en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "nv_0100_q1",
+		"descripcion": "primer quintil para   Nº de días con visibilidad superior o igual a 50 m. e inferior a 100 m. en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "nv_0100_q2",
+		"descripcion": "segundo quintil para   Nº de días con visibilidad superior o igual a 50 m. e inferior a 100 m. en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "nv_0100_q3",
+		"descripcion": "tercer quintil para   Nº de días con visibilidad superior o igual a 50 m. e inferior a 100 m. en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "nv_0100_q4",
+		"descripcion": "cuarto quintil para   Nº de días con visibilidad superior o igual a 50 m. e inferior a 100 m. en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "nv_0100_s",
+		"descripcion": "desviación típica para   Nº de días con visibilidad superior o igual a 50 m. e inferior a 100 m. en el mes/año",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "nv_1000_cv",
+		"descripcion": "coeficiente de variación de Pearson para  Nº de días con visibilidad  superior o igual a 100 m. e inferior a 1 km. en el mes/año",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "nv_1000_max",
+		"descripcion": "valor máximo para  Nº de días con visibilidad  superior o igual a 100 m. e inferior a 1 km. en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "nv_1000_md",
+		"descripcion": "media aritmetica para  Nº de días con visibilidad  superior o igual a 100 m. e inferior a 1 km. en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "nv_1000_min",
+		"descripcion": "valor mínimo para  Nº de días con visibilidad  superior o igual a 100 m. e inferior a 1 km. en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "nv_1000_mn",
+		"descripcion": "mediana para  Nº de días con visibilidad  superior o igual a 100 m. e inferior a 1 km. en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "nv_1000_n",
+		"descripcion": "frecuencia absoluta (número de días para los que hay valor) para  Nº de días con visibilidad  superior o igual a 100 m. e inferior a 1 km. en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "nv_1000_q1",
+		"descripcion": "primer quintil para  Nº de días con visibilidad  superior o igual a 100 m. e inferior a 1 km. en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "nv_1000_q2",
+		"descripcion": "segundo quintil para  Nº de días con visibilidad  superior o igual a 100 m. e inferior a 1 km. en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "nv_1000_q3",
+		"descripcion": "tercer quintil para  Nº de días con visibilidad  superior o igual a 100 m. e inferior a 1 km. en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "nv_1000_q4",
+		"descripcion": "cuarto quintil para  Nº de días con visibilidad  superior o igual a 100 m. e inferior a 1 km. en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "(%)",
+		"requerido": false
+	}, {
+		"id": "nv_1000_s",
+		"descripcion": "desviación típica para  Nº de días con visibilidad  superior o igual a 100 m. e inferior a 1 km. en el mes/año",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "nw_55_cv",
+		"descripcion": "coeficiente de variación de Pearson para Nº de días de velocidad del viento mayor o igual a 55 Km/h en el mes/año",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "nw_55_max",
+		"descripcion": "valor máximo para Nº de días de velocidad del viento mayor o igual a 55 Km/h en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "nw_55_md",
+		"descripcion": "media aritmetica para Nº de días de velocidad del viento mayor o igual a 55 Km/h en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "nw_55_min",
+		"descripcion": "valor mínimo para Nº de días de velocidad del viento mayor o igual a 55 Km/h en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "nw_55_mn",
+		"descripcion": "mediana para Nº de días de velocidad del viento mayor o igual a 55 Km/h en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "nw_55_n",
+		"descripcion": "frecuencia absoluta (número de días para los que hay valor) para Nº de días de velocidad del viento mayor o igual a 55 Km/h en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "nw_55_q1",
+		"descripcion": "primer quintil para Nº de días de velocidad del viento mayor o igual a 55 Km/h en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "nw_55_q2",
+		"descripcion": "segundo quintil para Nº de días de velocidad del viento mayor o igual a 55 Km/h en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "nw_55_q3",
+		"descripcion": "tercer quintil para Nº de días de velocidad del viento mayor o igual a 55 Km/h en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "nw_55_q4",
+		"descripcion": "cuarto quintil para Nº de días de velocidad del viento mayor o igual a 55 Km/h en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "nw_55_s",
+		"descripcion": "desviación típica para Nº de días de velocidad del viento mayor o igual a 55 Km/h en el mes/año",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "nw_91_cv",
+		"descripcion": "coeficiente de variación de Pearson para Nº de días de velocidad del viento mayor o igual a 91 Km/h en el mes/año",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "nw_91_max",
+		"descripcion": "valor máximo para Nº de días de velocidad del viento mayor o igual a 91 Km/h en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "nw_91_md",
+		"descripcion": "media aritmetica para Nº de días de velocidad del viento mayor o igual a 91 Km/h en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "nw_91_min",
+		"descripcion": "valor mínimo para Nº de días de velocidad del viento mayor o igual a 91 Km/h en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "nw_91_mn",
+		"descripcion": "mediana para Nº de días de velocidad del viento mayor o igual a 91 Km/h en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "nw_91_n",
+		"descripcion": "frecuencia absoluta (número de días para los que hay valor) para Nº de días de velocidad del viento mayor o igual a 91 Km/h en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "nw_91_q1",
+		"descripcion": "primer quintil para Nº de días de velocidad del viento mayor o igual a 91 Km/h en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "nw_91_q2",
+		"descripcion": "segundo quintil para Nº de días de velocidad del viento mayor o igual a 91 Km/h en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "nw_91_q3",
+		"descripcion": "tercer quintil para Nº de días de velocidad del viento mayor o igual a 91 Km/h en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "nw_91_q4",
+		"descripcion": "cuarto quintil para Nº de días de velocidad del viento mayor o igual a 91 Km/h en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "nw_91_s",
+		"descripcion": "desviación típica para Nº de días de velocidad del viento mayor o igual a 91 Km/h en el mes/año",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "p_max_cv",
+		"descripcion": "coeficiente de variación de Pearson para Precipitación máxima diaria (mm) del mes/año y fecha",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "p_max_max",
+		"descripcion": "valor máximo para Precipitación máxima diaria (mm) del mes/año y fecha",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "p_max_md",
+		"descripcion": "media aritmetica para Precipitación máxima diaria (mm) del mes/año y fecha",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "p_max_min",
+		"descripcion": "valor mínimo para Precipitación máxima diaria (mm) del mes/año y fecha",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "p_max_mn",
+		"descripcion": "mediana para Precipitación máxima diaria (mm) del mes/año y fecha",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "p_max_n",
+		"descripcion": "frecuencia absoluta (número de días para los que hay valor) para Precipitación máxima diaria (mm) del mes/año y fecha",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "p_max_q1",
+		"descripcion": "primer quintil para Precipitación máxima diaria (mm) del mes/año y fecha",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "p_max_q2",
+		"descripcion": "segundo quintil para Precipitación máxima diaria (mm) del mes/año y fecha",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "p_max_q3",
+		"descripcion": "tercer quintil para Precipitación máxima diaria (mm) del mes/año y fecha",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "p_max_q4",
+		"descripcion": "cuarto quintil para Precipitación máxima diaria (mm) del mes/año y fecha",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "p_max_s",
+		"descripcion": "desviación típica para Precipitación máxima diaria (mm) del mes/año y fecha",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "p_mes_cv",
+		"descripcion": "coeficiente de variación de Pearson para Precipitación total mensual/anual (mm)",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "p_mes_max",
+		"descripcion": "valor máximo para Precipitación total mensual/anual (mm)",
+		"tipo_datos": "string",
+		"unidad": "mm",
+		"requerido": false
+	}, {
+		"id": "p_mes_md",
+		"descripcion": "media aritmetica para Precipitación total mensual/anual (mm)",
+		"tipo_datos": "string",
+		"unidad": "mm",
+		"requerido": false
+	}, {
+		"id": "p_mes_min",
+		"descripcion": "valor mínimo para Precipitación total mensual/anual (mm)",
+		"tipo_datos": "string",
+		"unidad": "mm",
+		"requerido": false
+	}, {
+		"id": "p_mes_mn",
+		"descripcion": "mediana para Precipitación total mensual/anual (mm)",
+		"tipo_datos": "string",
+		"unidad": "mm",
+		"requerido": false
+	}, {
+		"id": "p_mes_n",
+		"descripcion": "frecuencia absoluta (número de días para los que hay valor) para Precipitación total mensual/anual (mm)",
+		"tipo_datos": "string",
+		"unidad": "numero de dias",
+		"requerido": false
+	}, {
+		"id": "p_mes_q1",
+		"descripcion": "primer quintil para Precipitación total mensual/anual (mm)",
+		"tipo_datos": "string",
+		"unidad": "mm",
+		"requerido": false
+	}, {
+		"id": "p_mes_q2",
+		"descripcion": "segundo quintil para Precipitación total mensual/anual (mm)",
+		"tipo_datos": "string",
+		"unidad": "mm",
+		"requerido": false
+	}, {
+		"id": "p_mes_q3",
+		"descripcion": "tercer quintil para Precipitación total mensual/anual (mm)",
+		"tipo_datos": "string",
+		"unidad": "mm",
+		"requerido": false
+	}, {
+		"id": "p_mes_q4",
+		"descripcion": "cuarto quintil para Precipitación total mensual/anual (mm)",
+		"tipo_datos": "string",
+		"unidad": "mm",
+		"requerido": false
+	}, {
+		"id": "p_mes_s",
+		"descripcion": "desviación típica para Precipitación total mensual/anual (mm)",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "p_sol_cv",
+		"descripcion": "coeficiente de variación de Pearson para Porcentaje medio mensual de la insolación diaria frente a la insolación teórica. (%)",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "p_sol_max",
+		"descripcion": "valor máximo para Porcentaje medio mensual de la insolación diaria frente a la insolación teórica. (%)",
+		"tipo_datos": "string",
+		"unidad": "(%)",
+		"requerido": false
+	}, {
+		"id": "p_sol_md",
+		"descripcion": "media aritmetica para Porcentaje medio mensual de la insolación diaria frente a la insolación teórica. (%)",
+		"tipo_datos": "string",
+		"unidad": "(%)",
+		"requerido": false
+	}, {
+		"id": "p_sol_min",
+		"descripcion": "valor mínimo para Porcentaje medio mensual de la insolación diaria frente a la insolación teórica. (%)",
+		"tipo_datos": "string",
+		"unidad": "(%)",
+		"requerido": false
+	}, {
+		"id": "p_sol_mn",
+		"descripcion": "mediana para Porcentaje medio mensual de la insolación diaria frente a la insolación teórica. (%)",
+		"tipo_datos": "string",
+		"unidad": "(%)",
+		"requerido": false
+	}, {
+		"id": "p_sol_n",
+		"descripcion": "frecuencia absoluta (número de días para los que hay valor) para Porcentaje medio mensual de la insolación diaria frente a la insolación teórica. (%)",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "p_sol_q1",
+		"descripcion": "primer quintil para Porcentaje medio mensual de la insolación diaria frente a la insolación teórica. (%)",
+		"tipo_datos": "string",
+		"unidad": "(%)",
+		"requerido": false
+	}, {
+		"id": "p_sol_q2",
+		"descripcion": "segundo quintil para Porcentaje medio mensual de la insolación diaria frente a la insolación teórica. (%)",
+		"tipo_datos": "string",
+		"unidad": "(%)",
+		"requerido": false
+	}, {
+		"id": "p_sol_q3",
+		"descripcion": "tercer quintil para Porcentaje medio mensual de la insolación diaria frente a la insolación teórica. (%)",
+		"tipo_datos": "string",
+		"unidad": "(%)",
+		"requerido": false
+	}, {
+		"id": "p_sol_q4",
+		"descripcion": "cuarto quintil para Porcentaje medio mensual de la insolación diaria frente a la insolación teórica. (%)",
+		"tipo_datos": "string",
+		"unidad": "(%)",
+		"requerido": false
+	}, {
+		"id": "p_sol_s",
+		"descripcion": "desviación típica para Porcentaje medio mensual de la insolación diaria frente a la insolación teórica. (%)",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "q_mar_cv",
+		"descripcion": "coeficiente de variación de Pearson para Presión media mensual/anual al nivel del mar (hPa)",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "q_mar_max",
+		"descripcion": "valor máximo para Presión media mensual/anual al nivel del mar (hPa)",
+		"tipo_datos": "string",
+		"unidad": "hPa",
+		"requerido": false
+	}, {
+		"id": "q_mar_md",
+		"descripcion": "media aritmetica para Presión media mensual/anual al nivel del mar (hPa)",
+		"tipo_datos": "string",
+		"unidad": "hPa",
+		"requerido": false
+	}, {
+		"id": "q_mar_min",
+		"descripcion": "valor mínimo para Presión media mensual/anual al nivel del mar (hPa)",
+		"tipo_datos": "string",
+		"unidad": "hPa",
+		"requerido": false
+	}, {
+		"id": "q_mar_mn",
+		"descripcion": "mediana para Presión media mensual/anual al nivel del mar (hPa)",
+		"tipo_datos": "string",
+		"unidad": "hPa",
+		"requerido": false
+	}, {
+		"id": "q_mar_n",
+		"descripcion": "frecuencia absoluta (número de días para los que hay valor) para Presión media mensual/anual al nivel del mar (hPa)",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "q_mar_q1",
+		"descripcion": "primer quintil para Presión media mensual/anual al nivel del mar (hPa)",
+		"tipo_datos": "string",
+		"unidad": "hPa",
+		"requerido": false
+	}, {
+		"id": "q_mar_q2",
+		"descripcion": "segundo quintil para Presión media mensual/anual al nivel del mar (hPa)",
+		"tipo_datos": "string",
+		"unidad": "hPa",
+		"requerido": false
+	}, {
+		"id": "q_mar_q3",
+		"descripcion": "tercer quintil para Presión media mensual/anual al nivel del mar (hPa)",
+		"tipo_datos": "string",
+		"unidad": "hPa",
+		"requerido": false
+	}, {
+		"id": "q_mar_q4",
+		"descripcion": "cuarto quintil para Presión media mensual/anual al nivel del mar (hPa)",
+		"tipo_datos": "string",
+		"unidad": "hPa",
+		"requerido": false
+	}, {
+		"id": "q_mar_s",
+		"descripcion": "desviación típica para Presión media mensual/anual al nivel del mar (hPa)",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "q_max_cv",
+		"descripcion": "coeficiente de variación de Pearson para Presión máxima absoluta mensual/anual y fecha (hPa)",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "q_max_max",
+		"descripcion": "valor máximo para Presión máxima absoluta mensual/anual y fecha (hPa)",
+		"tipo_datos": "string",
+		"unidad": "hPa",
+		"requerido": false
+	}, {
+		"id": "q_max_md",
+		"descripcion": "media aritmetica para Presión máxima absoluta mensual/anual y fecha (hPa)",
+		"tipo_datos": "string",
+		"unidad": "hPa",
+		"requerido": false
+	}, {
+		"id": "q_max_min",
+		"descripcion": "valor mínimo para Presión máxima absoluta mensual/anual y fecha (hPa)",
+		"tipo_datos": "string",
+		"unidad": "hPa",
+		"requerido": false
+	}, {
+		"id": "q_max_mn",
+		"descripcion": "mediana para Presión máxima absoluta mensual/anual y fecha (hPa)",
+		"tipo_datos": "string",
+		"unidad": "hPa",
+		"requerido": false
+	}, {
+		"id": "q_max_n",
+		"descripcion": "frecuencia absoluta (número de días para los que hay valor) para Presión máxima absoluta mensual/anual y fecha (hPa)",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "q_max_q1",
+		"descripcion": "primer quintil para Presión máxima absoluta mensual/anual y fecha (hPa)",
+		"tipo_datos": "string",
+		"unidad": "hPa",
+		"requerido": false
+	}, {
+		"id": "q_max_q2",
+		"descripcion": "segundo quintil para Presión máxima absoluta mensual/anual y fecha (hPa)",
+		"tipo_datos": "string",
+		"unidad": "hPa",
+		"requerido": false
+	}, {
+		"id": "q_max_q3",
+		"descripcion": "tercer quintil para Presión máxima absoluta mensual/anual y fecha (hPa)",
+		"tipo_datos": "string",
+		"unidad": "hPa",
+		"requerido": false
+	}, {
+		"id": "q_max_q4",
+		"descripcion": "cuarto quintil para Presión máxima absoluta mensual/anual y fecha (hPa)",
+		"tipo_datos": "string",
+		"unidad": "hPa",
+		"requerido": false
+	}, {
+		"id": "q_max_s",
+		"descripcion": "desviación típica para Presión máxima absoluta mensual/anual y fecha (hPa)",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "q_med_cv",
+		"descripcion": "coeficiente de variación de Pearson para Presión media mensual/anual al nivel de la estación (hPa)",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "q_med_max",
+		"descripcion": "valor máximo para Presión media mensual/anual al nivel de la estación (hPa)",
+		"tipo_datos": "string",
+		"unidad": "hPa",
+		"requerido": false
+	}, {
+		"id": "q_med_md",
+		"descripcion": "media aritmetica para Presión media mensual/anual al nivel de la estación (hPa)",
+		"tipo_datos": "string",
+		"unidad": "hPa",
+		"requerido": false
+	}, {
+		"id": "q_med_min",
+		"descripcion": "valor mínimo para Presión media mensual/anual al nivel de la estación (hPa)",
+		"tipo_datos": "string",
+		"unidad": "hPa",
+		"requerido": false
+	}, {
+		"id": "q_med_mn",
+		"descripcion": "mediana para Presión media mensual/anual al nivel de la estación (hPa)",
+		"tipo_datos": "string",
+		"unidad": "hPa",
+		"requerido": false
+	}, {
+		"id": "q_med_n",
+		"descripcion": "frecuencia absoluta (número de días para los que hay valor) para Presión media mensual/anual al nivel de la estación (hPa)",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "q_med_q1",
+		"descripcion": "primer quintil para Presión media mensual/anual al nivel de la estación (hPa)",
+		"tipo_datos": "string",
+		"unidad": "hPa",
+		"requerido": false
+	}, {
+		"id": "q_med_q2",
+		"descripcion": "segundo quintil para Presión media mensual/anual al nivel de la estación (hPa)",
+		"tipo_datos": "string",
+		"unidad": "hPa",
+		"requerido": false
+	}, {
+		"id": "q_med_q3",
+		"descripcion": "tercer quintil para Presión media mensual/anual al nivel de la estación (hPa)",
+		"tipo_datos": "string",
+		"unidad": "hPa",
+		"requerido": false
+	}, {
+		"id": "q_med_q4",
+		"descripcion": "cuarto quintil para Presión media mensual/anual al nivel de la estación (hPa)",
+		"tipo_datos": "string",
+		"unidad": "hPa",
+		"requerido": false
+	}, {
+		"id": "q_med_s",
+		"descripcion": "desviación típica para Presión media mensual/anual al nivel de la estación (hPa)",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "q_min_cv",
+		"descripcion": "coeficiente de variación de Pearson para Presión máxima mínima mensual/anual y fecha (hPa)",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "q_min_max",
+		"descripcion": "valor máximo para Presión máxima mínima mensual/anual y fecha (hPa)",
+		"tipo_datos": "string",
+		"unidad": "hPa",
+		"requerido": false
+	}, {
+		"id": "q_min_md",
+		"descripcion": "media aritmetica para Presión máxima mínima mensual/anual y fecha (hPa)",
+		"tipo_datos": "string",
+		"unidad": "hPa",
+		"requerido": false
+	}, {
+		"id": "q_min_min",
+		"descripcion": "valor mínimo para Presión máxima mínima mensual/anual y fecha (hPa)",
+		"tipo_datos": "string",
+		"unidad": "hPa",
+		"requerido": false
+	}, {
+		"id": "q_min_mn",
+		"descripcion": "mediana para Presión máxima mínima mensual/anual y fecha (hPa)",
+		"tipo_datos": "string",
+		"unidad": "hPa",
+		"requerido": false
+	}, {
+		"id": "q_min_n",
+		"descripcion": "frecuencia absoluta (número de días para los que hay valor) para Presión máxima mínima mensual/anual y fecha (hPa)",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "q_min_q1",
+		"descripcion": "primer quintil para Presión máxima mínima mensual/anual y fecha (hPa)",
+		"tipo_datos": "string",
+		"unidad": "hPa",
+		"requerido": false
+	}, {
+		"id": "q_min_q2",
+		"descripcion": "segundo quintil para Presión máxima mínima mensual/anual y fecha (hPa)",
+		"tipo_datos": "string",
+		"unidad": "hPa",
+		"requerido": false
+	}, {
+		"id": "q_min_q3",
+		"descripcion": "tercer quintil para Presión máxima mínima mensual/anual y fecha (hPa)",
+		"tipo_datos": "string",
+		"unidad": "hPa",
+		"requerido": false
+	}, {
+		"id": "q_min_q4",
+		"descripcion": "cuarto quintil para Presión máxima mínima mensual/anual y fecha (hPa)",
+		"tipo_datos": "string",
+		"unidad": "hPa",
+		"requerido": false
+	}, {
+		"id": "q_min_s",
+		"descripcion": "desviación típica para Presión máxima mínima mensual/anual y fecha (hPa)",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "ta_max_cv",
+		"descripcion": "coeficiente de variación de Pearson para Temperatura mínima absoluta del mes/año y fecha ( grados celsius)",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "ta_max_max",
+		"descripcion": "valor máximo para Temperatura mínima absoluta del mes/año y fecha ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "hPa",
+		"requerido": false
+	}, {
+		"id": "ta_max_md",
+		"descripcion": "media aritmetica para Temperatura mínima absoluta del mes/año y fecha ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "hPa",
+		"requerido": false
+	}, {
+		"id": "ta_max_min",
+		"descripcion": "valor mínimo para Temperatura mínima absoluta del mes/año y fecha ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "hPa",
+		"requerido": false
+	}, {
+		"id": "ta_max_mn",
+		"descripcion": "mediana para Temperatura mínima absoluta del mes/año y fecha ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "hPa",
+		"requerido": false
+	}, {
+		"id": "ta_max_n",
+		"descripcion": "frecuencia absoluta (número de días para los que hay valor) para Temperatura mínima absoluta del mes/año y fecha ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "ta_max_q1",
+		"descripcion": "primer quintil para Temperatura mínima absoluta del mes/año y fecha ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "hPa",
+		"requerido": false
+	}, {
+		"id": "ta_max_q2",
+		"descripcion": "segundo quintil para Temperatura mínima absoluta del mes/año y fecha ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "hPa",
+		"requerido": false
+	}, {
+		"id": "ta_max_q3",
+		"descripcion": "tercer quintil para Temperatura mínima absoluta del mes/año y fecha ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "hPa",
+		"requerido": false
+	}, {
+		"id": "ta_max_q4",
+		"descripcion": "cuarto quintil para Temperatura mínima absoluta del mes/año y fecha ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "hPa",
+		"requerido": false
+	}, {
+		"id": "ta_max_s",
+		"descripcion": "desviación típica para Temperatura mínima absoluta del mes/año y fecha ( grados celsius)",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "ta_max_cv",
+		"descripcion": "coeficiente de variación de Pearson para Temperatura máxima absoluta del mes/año y fecha ( grados celsius)",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "ta_max_max",
+		"descripcion": "valor máximo para Temperatura máxima absoluta del mes/año y fecha ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "hPa",
+		"requerido": false
+	}, {
+		"id": "ta_max_md",
+		"descripcion": "media aritmetica para Temperatura máxima absoluta del mes/año y fecha ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "hPa",
+		"requerido": false
+	}, {
+		"id": "ta_max_min",
+		"descripcion": "valor mínimo para Temperatura máxima absoluta del mes/año y fecha ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "hPa",
+		"requerido": false
+	}, {
+		"id": "ta_max_mn",
+		"descripcion": "mediana para Temperatura máxima absoluta del mes/año y fecha ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "hPa",
+		"requerido": false
+	}, {
+		"id": "ta_max_n",
+		"descripcion": "frecuencia absoluta (número de días para los que hay valor) para Temperatura máxima absoluta del mes/año y fecha ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "ta_max_q1",
+		"descripcion": "primer quintil para Temperatura máxima absoluta del mes/año y fecha ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "hPa",
+		"requerido": false
+	}, {
+		"id": "ta_max_q2",
+		"descripcion": "segundo quintil para Temperatura máxima absoluta del mes/año y fecha ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "hPa",
+		"requerido": false
+	}, {
+		"id": "ta_max_q3",
+		"descripcion": "tercer quintil para Temperatura máxima absoluta del mes/año y fecha ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "hPa",
+		"requerido": false
+	}, {
+		"id": "ta_max_q4",
+		"descripcion": "cuarto quintil para Temperatura máxima absoluta del mes/año y fecha ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "hPa",
+		"requerido": false
+	}, {
+		"id": "ta_max_s",
+		"descripcion": "desviación típica para Temperatura máxima absoluta del mes/año y fecha ( grados celsius)",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "ta_min_cv",
+		"descripcion": "coeficiente de variación de Pearson para Temperatura mínima absoluta del mes/año y fecha ( grados celsius)",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "ta_min_max",
+		"descripcion": "valor máximo para Temperatura mínima absoluta del mes/año y fecha ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "hPa",
+		"requerido": false
+	}, {
+		"id": "ta_min_md",
+		"descripcion": "media aritmetica para Temperatura mínima absoluta del mes/año y fecha ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "hPa",
+		"requerido": false
+	}, {
+		"id": "ta_min_min",
+		"descripcion": "valor mínimo para Temperatura mínima absoluta del mes/año y fecha ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "hPa",
+		"requerido": false
+	}, {
+		"id": "ta_min_mn",
+		"descripcion": "mediana para Temperatura mínima absoluta del mes/año y fecha ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "hPa",
+		"requerido": false
+	}, {
+		"id": "ta_min_n",
+		"descripcion": "frecuencia absoluta (número de días para los que hay valor) para Temperatura mínima absoluta del mes/año y fecha ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "ta_min_q1",
+		"descripcion": "primer quintil para Temperatura mínima absoluta del mes/año y fecha ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "hPa",
+		"requerido": false
+	}, {
+		"id": "ta_min_q2",
+		"descripcion": "segundo quintil para Temperatura mínima absoluta del mes/año y fecha ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "hPa",
+		"requerido": false
+	}, {
+		"id": "ta_min_q3",
+		"descripcion": "tercer quintil para Temperatura mínima absoluta del mes/año y fecha ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "hPa",
+		"requerido": false
+	}, {
+		"id": "ta_min_q4",
+		"descripcion": "cuarto quintil para Temperatura mínima absoluta del mes/año y fecha ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "hPa",
+		"requerido": false
+	}, {
+		"id": "ta_min_s",
+		"descripcion": "desviación típica para Temperatura mínima absoluta del mes/año y fecha ( grados celsius)",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "ti_max_cv",
+		"descripcion": "coeficiente de variación de Pearson para Temperatura máxima mas baja del mes/año ( grados celsius)",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "ti_max_max",
+		"descripcion": "valor máximo para Temperatura máxima mas baja del mes/año ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "grados celsius",
+		"requerido": false
+	}, {
+		"id": "ti_max_md",
+		"descripcion": "media aritmetica para Temperatura máxima mas baja del mes/año ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "grados celsius",
+		"requerido": false
+	}, {
+		"id": "ti_max_min",
+		"descripcion": "valor mínimo para Temperatura máxima mas baja del mes/año ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "grados celsius",
+		"requerido": false
+	}, {
+		"id": "ti_max_mn",
+		"descripcion": "mediana para Temperatura máxima mas baja del mes/año ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "grados celsius",
+		"requerido": false
+	}, {
+		"id": "ti_max_n",
+		"descripcion": "frecuencia absoluta (número de días para los que hay valor) para Temperatura máxima mas baja del mes/año ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "ti_max_q1",
+		"descripcion": "primer quintil para Temperatura máxima mas baja del mes/año ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "grados celsius",
+		"requerido": false
+	}, {
+		"id": "ti_max_q2",
+		"descripcion": "segundo quintil para Temperatura máxima mas baja del mes/año ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "grados celsius",
+		"requerido": false
+	}, {
+		"id": "ti_max_q3",
+		"descripcion": "tercer quintil para Temperatura máxima mas baja del mes/año ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "grados celsius",
+		"requerido": false
+	}, {
+		"id": "ti_max_q4",
+		"descripcion": "cuarto quintil para Temperatura máxima mas baja del mes/año ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "grados celsius",
+		"requerido": false
+	}, {
+		"id": "ti_max_s",
+		"descripcion": "desviación típica para Temperatura máxima mas baja del mes/año ( grados celsius)",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "ti_min_cv",
+		"descripcion": "coeficiente de variación de Pearson para Temperatura mínima mas alta del mes/año ( grados celsius)",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "ti_min_max",
+		"descripcion": "valor máximo para Temperatura mínima mas alta del mes/año ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "grados celsius",
+		"requerido": false
+	}, {
+		"id": "ti_min_md",
+		"descripcion": "media aritmetica para Temperatura mínima mas alta del mes/año ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "grados celsius",
+		"requerido": false
+	}, {
+		"id": "ti_min_min",
+		"descripcion": "valor mínimo para Temperatura mínima mas alta del mes/año ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "grados celsius",
+		"requerido": false
+	}, {
+		"id": "ti_min_mn",
+		"descripcion": "mediana para Temperatura mínima mas alta del mes/año ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "grados celsius",
+		"requerido": false
+	}, {
+		"id": "ti_min_n",
+		"descripcion": "frecuencia absoluta (número de días para los que hay valor) para Temperatura mínima mas alta del mes/año ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "ti_min_q1",
+		"descripcion": "primer quintil para Temperatura mínima mas alta del mes/año ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "grados celsius",
+		"requerido": false
+	}, {
+		"id": "ti_min_q2",
+		"descripcion": "segundo quintil para Temperatura mínima mas alta del mes/año ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "grados celsius",
+		"requerido": false
+	}, {
+		"id": "ti_min_q3",
+		"descripcion": "tercer quintil para Temperatura mínima mas alta del mes/año ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "grados celsius",
+		"requerido": false
+	}, {
+		"id": "ti_min_q4",
+		"descripcion": "cuarto quintil para Temperatura mínima mas alta del mes/año ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "grados celsius",
+		"requerido": false
+	}, {
+		"id": "ti_min_s",
+		"descripcion": "desviación típica para Temperatura mínima mas alta del mes/año ( grados celsius)",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "tm_max_cv",
+		"descripcion": "coeficiente de variación de Pearson para Temperatura media mensual/anual de las máximas ( grados celsius)",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "tm_max_max",
+		"descripcion": "valor máximo para Temperatura media mensual/anual de las máximas ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "grados celsius",
+		"requerido": false
+	}, {
+		"id": "tm_max_md",
+		"descripcion": "media aritmetica para Temperatura media mensual/anual de las máximas ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "grados celsius",
+		"requerido": false
+	}, {
+		"id": "tm_max_min",
+		"descripcion": "valor mínimo para Temperatura media mensual/anual de las máximas ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "grados celsius",
+		"requerido": false
+	}, {
+		"id": "tm_max_mn",
+		"descripcion": "mediana para Temperatura media mensual/anual de las máximas ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "grados celsius",
+		"requerido": false
+	}, {
+		"id": "tm_max_n",
+		"descripcion": "frecuencia absoluta (número de días para los que hay valor) para Temperatura media mensual/anual de las máximas ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "tm_max_q1",
+		"descripcion": "primer quintil para Temperatura media mensual/anual de las máximas ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "grados celsius",
+		"requerido": false
+	}, {
+		"id": "tm_max_q2",
+		"descripcion": "segundo quintil para Temperatura media mensual/anual de las máximas ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "grados celsius",
+		"requerido": false
+	}, {
+		"id": "tm_max_q3",
+		"descripcion": "tercer quintil para Temperatura media mensual/anual de las máximas ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "grados celsius",
+		"requerido": false
+	}, {
+		"id": "tm_max_q4",
+		"descripcion": "cuarto quintil para Temperatura media mensual/anual de las máximas ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "grados celsius",
+		"requerido": false
+	}, {
+		"id": "tm_max_s",
+		"descripcion": "desviación típica para Temperatura media mensual/anual de las máximas ( grados celsius)",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "tm_mes_cv",
+		"descripcion": "coeficiente de variación de Pearson para Temperatura media mensual/anual ( grados celsius)",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "tm_mes_max",
+		"descripcion": "valor máximo para Temperatura media mensual/anual ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "grados celsius",
+		"requerido": false
+	}, {
+		"id": "tm_mes_md",
+		"descripcion": "media aritmetica para Temperatura media mensual/anual ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "grados celsius",
+		"requerido": false
+	}, {
+		"id": "tm_mes_min",
+		"descripcion": "valor mínimo para Temperatura media mensual/anual ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "grados celsius",
+		"requerido": false
+	}, {
+		"id": "tm_mes_mn",
+		"descripcion": "mediana para Temperatura media mensual/anual ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "grados celsius",
+		"requerido": false
+	}, {
+		"id": "tm_mes_n",
+		"descripcion": "frecuencia absoluta (número de días para los que hay valor) para Temperatura media mensual/anual ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "tm_mes_q1",
+		"descripcion": "primer quintil para Temperatura media mensual/anual ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "grados celsius",
+		"requerido": false
+	}, {
+		"id": "tm_mes_q2",
+		"descripcion": "segundo quintil para Temperatura media mensual/anual ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "grados celsius",
+		"requerido": false
+	}, {
+		"id": "tm_mes_q3",
+		"descripcion": "tercer quintil para Temperatura media mensual/anual ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "grados celsius",
+		"requerido": false
+	}, {
+		"id": "tm_mes_q4",
+		"descripcion": "cuarto quintil para Temperatura media mensual/anual ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "grados celsius",
+		"requerido": false
+	}, {
+		"id": "tm_mes_s",
+		"descripcion": "desviación típica para Temperatura media mensual/anual ( grados celsius)",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "tm_min_cv",
+		"descripcion": "coeficiente de variación de Pearson para Temperatura media mensual/anual de las mínimas ( grados celsius)",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "tm_min_max",
+		"descripcion": "valor máximo para Temperatura media mensual/anual de las mínimas ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "grados celsius",
+		"requerido": false
+	}, {
+		"id": "tm_min_md",
+		"descripcion": "media aritmetica para Temperatura media mensual/anual de las mínimas ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "grados celsius",
+		"requerido": false
+	}, {
+		"id": "tm_min_min",
+		"descripcion": "valor mínimo para Temperatura media mensual/anual de las mínimas ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "grados celsius",
+		"requerido": false
+	}, {
+		"id": "tm_min_mn",
+		"descripcion": "mediana para Temperatura media mensual/anual de las mínimas ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "grados celsius",
+		"requerido": false
+	}, {
+		"id": "tm_min_n",
+		"descripcion": "frecuencia absoluta (número de días para los que hay valor) para Temperatura media mensual/anual de las mínimas ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "tm_min_q1",
+		"descripcion": "primer quintil para Temperatura media mensual/anual de las mínimas ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "grados celsius",
+		"requerido": false
+	}, {
+		"id": "tm_min_q2",
+		"descripcion": "segundo quintil para Temperatura media mensual/anual de las mínimas ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "grados celsius",
+		"requerido": false
+	}, {
+		"id": "tm_min_q3",
+		"descripcion": "tercer quintil para Temperatura media mensual/anual de las mínimas ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "grados celsius",
+		"requerido": false
+	}, {
+		"id": "tm_min_q4",
+		"descripcion": "cuarto quintil para Temperatura media mensual/anual de las mínimas ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "grados celsius",
+		"requerido": false
+	}, {
+		"id": "tm_min_s",
+		"descripcion": "desviación típica para Temperatura media mensual/anual de las mínimas ( grados celsius)",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "ts_10_cv",
+		"descripcion": "coeficiente de variación de Pearson para Temperatura media mensual/anual a 10 cm de profundidad ( grados celsius)",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "ts_10_max",
+		"descripcion": "valor máximo para Temperatura media mensual/anual a 10 cm de profundidad ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "grados celsius",
+		"requerido": false
+	}, {
+		"id": "ts_10_md",
+		"descripcion": "media aritmetica para Temperatura media mensual/anual a 10 cm de profundidad ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "grados celsius",
+		"requerido": false
+	}, {
+		"id": "ts_10_min",
+		"descripcion": "valor mínimo para Temperatura media mensual/anual a 10 cm de profundidad ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "grados celsius",
+		"requerido": false
+	}, {
+		"id": "ts_10_mn",
+		"descripcion": "mediana para Temperatura media mensual/anual a 10 cm de profundidad ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "grados celsius",
+		"requerido": false
+	}, {
+		"id": "ts_10_n",
+		"descripcion": "frecuencia absoluta (número de días para los que hay valor) para Temperatura media mensual/anual a 10 cm de profundidad ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "ts_10_q1",
+		"descripcion": "primer quintil para Temperatura media mensual/anual a 10 cm de profundidad ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "grados celsius",
+		"requerido": false
+	}, {
+		"id": "ts_10_q2",
+		"descripcion": "segundo quintil para Temperatura media mensual/anual a 10 cm de profundidad ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "grados celsius",
+		"requerido": false
+	}, {
+		"id": "ts_10_q3",
+		"descripcion": "tercer quintil para Temperatura media mensual/anual a 10 cm de profundidad ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "grados celsius",
+		"requerido": false
+	}, {
+		"id": "ts_10_q4",
+		"descripcion": "cuarto quintil para Temperatura media mensual/anual a 10 cm de profundidad ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "grados celsius",
+		"requerido": false
+	}, {
+		"id": "ts_10_s",
+		"descripcion": "desviación típica para Temperatura media mensual/anual a 10 cm de profundidad ( grados celsius)",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "ts_20_cv",
+		"descripcion": "coeficiente de variación de Pearson para Temperatura media mensual/anual a 20 cm de profundidad ( grados celsius)",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "ts_20_max",
+		"descripcion": "valor máximo para Temperatura media mensual/anual a 20 cm de profundidad ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "grados celsius",
+		"requerido": false
+	}, {
+		"id": "ts_20_md",
+		"descripcion": "media aritmetica para Temperatura media mensual/anual a 20 cm de profundidad ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "grados celsius",
+		"requerido": false
+	}, {
+		"id": "ts_20_min",
+		"descripcion": "valor mínimo para Temperatura media mensual/anual a 20 cm de profundidad ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "grados celsius",
+		"requerido": false
+	}, {
+		"id": "ts_20_mn",
+		"descripcion": "mediana para Temperatura media mensual/anual a 20 cm de profundidad ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "grados celsius",
+		"requerido": false
+	}, {
+		"id": "ts_20_n",
+		"descripcion": "frecuencia absoluta (número de días para los que hay valor) para Temperatura media mensual/anual a 20 cm de profundidad ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "ts_20_q1",
+		"descripcion": "primer quintil para Temperatura media mensual/anual a 20 cm de profundidad ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "grados celsius",
+		"requerido": false
+	}, {
+		"id": "ts_20_q2",
+		"descripcion": "segundo quintil para Temperatura media mensual/anual a 20 cm de profundidad ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "grados celsius",
+		"requerido": false
+	}, {
+		"id": "ts_20_q3",
+		"descripcion": "tercer quintil para Temperatura media mensual/anual a 20 cm de profundidad ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "grados celsius",
+		"requerido": false
+	}, {
+		"id": "ts_20_q4",
+		"descripcion": "cuarto quintil para Temperatura media mensual/anual a 20 cm de profundidad ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "grados celsius",
+		"requerido": false
+	}, {
+		"id": "ts_20_s",
+		"descripcion": "desviación típica para Temperatura media mensual/anual a 20 cm de profundidad ( grados celsius)",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "ts_50_cv",
+		"descripcion": "coeficiente de variación de Pearson para Temperatura media mensual/anual a 50 cm de profundidad ( grados celsius)",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "ts_50_max",
+		"descripcion": "valor máximo para Temperatura media mensual/anual a 50 cm de profundidad ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "grados celsius",
+		"requerido": false
+	}, {
+		"id": "ts_50_md",
+		"descripcion": "media aritmetica para Temperatura media mensual/anual a 50 cm de profundidad ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "grados celsius",
+		"requerido": false
+	}, {
+		"id": "ts_50_min",
+		"descripcion": "valor mínimo para Temperatura media mensual/anual a 50 cm de profundidad ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "grados celsius",
+		"requerido": false
+	}, {
+		"id": "ts_50_mn",
+		"descripcion": "mediana para Temperatura media mensual/anual a 50 cm de profundidad ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "grados celsius",
+		"requerido": false
+	}, {
+		"id": "ts_50_n",
+		"descripcion": "frecuencia absoluta (número de días para los que hay valor) para Temperatura media mensual/anual a 50 cm de profundidad ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "ts_50_q1",
+		"descripcion": "primer quintil para Temperatura media mensual/anual a 50 cm de profundidad ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "grados celsius",
+		"requerido": false
+	}, {
+		"id": "ts_50_q2",
+		"descripcion": "segundo quintil para Temperatura media mensual/anual a 50 cm de profundidad ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "grados celsius",
+		"requerido": false
+	}, {
+		"id": "ts_50_q3",
+		"descripcion": "tercer quintil para Temperatura media mensual/anual a 50 cm de profundidad ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "grados celsius",
+		"requerido": false
+	}, {
+		"id": "ts_50_q4",
+		"descripcion": "cuarto quintil para Temperatura media mensual/anual a 50 cm de profundidad ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "grados celsius",
+		"requerido": false
+	}, {
+		"id": "ts_50_s",
+		"descripcion": "desviación típica para Temperatura media mensual/anual a 50 cm de profundidad ( grados celsius)",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "ts_min_cv",
+		"descripcion": "coeficiente de variación de Pearson para Temperatura mínima mas alta del mes/año ( grados celsius)",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "ts_min_max",
+		"descripcion": "valor máximo para Temperatura mínima mas alta del mes/año ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "grados celsius",
+		"requerido": false
+	}, {
+		"id": "ts_min_md",
+		"descripcion": "media aritmetica para Temperatura mínima mas alta del mes/año ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "grados celsius",
+		"requerido": false
+	}, {
+		"id": "ts_min_min",
+		"descripcion": "valor mínimo para Temperatura mínima mas alta del mes/año ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "grados celsius",
+		"requerido": false
+	}, {
+		"id": "ts_min_mn",
+		"descripcion": "mediana para Temperatura mínima mas alta del mes/año ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "grados celsius",
+		"requerido": false
+	}, {
+		"id": "ts_min_n",
+		"descripcion": "frecuencia absoluta (número de días para los que hay valor) para Temperatura mínima mas alta del mes/año ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "ts_min_q1",
+		"descripcion": "primer quintil para Temperatura mínima mas alta del mes/año ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "grados celsius",
+		"requerido": false
+	}, {
+		"id": "ts_min_q2",
+		"descripcion": "segundo quintil para Temperatura mínima mas alta del mes/año ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "grados celsius",
+		"requerido": false
+	}, {
+		"id": "ts_min_q3",
+		"descripcion": "tercer quintil para Temperatura mínima mas alta del mes/año ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "grados celsius",
+		"requerido": false
+	}, {
+		"id": "ts_min_q4",
+		"descripcion": "cuarto quintil para Temperatura mínima mas alta del mes/año ( grados celsius)",
+		"tipo_datos": "string",
+		"unidad": "grados celsius",
+		"requerido": false
+	}, {
+		"id": "ts_min_s",
+		"descripcion": "desviación típica para Temperatura mínima mas alta del mes/año ( grados celsius)",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "w_med_cv",
+		"descripcion": "coeficiente de variación de Pearson para Velocidad media mensual elaborada a partir de las observaciones de 07, 13 y 18 UTC.  (Km/h)",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "w_med_max",
+		"descripcion": "valor máximo para Velocidad media mensual elaborada a partir de las observaciones de 07, 13 y 18 UTC.  (Km/h)",
+		"tipo_datos": "string",
+		"unidad": "Km/h",
+		"requerido": false
+	}, {
+		"id": "w_med_md",
+		"descripcion": "media aritmetica para Velocidad media mensual elaborada a partir de las observaciones de 07, 13 y 18 UTC.  (Km/h)",
+		"tipo_datos": "string",
+		"unidad": "Km/h",
+		"requerido": false
+	}, {
+		"id": "w_med_min",
+		"descripcion": "valor mínimo para Velocidad media mensual elaborada a partir de las observaciones de 07, 13 y 18 UTC.  (Km/h)",
+		"tipo_datos": "string",
+		"unidad": "Km/h",
+		"requerido": false
+	}, {
+		"id": "w_med_mn",
+		"descripcion": "mediana para Velocidad media mensual elaborada a partir de las observaciones de 07, 13 y 18 UTC.  (Km/h)",
+		"tipo_datos": "string",
+		"unidad": "Km/h",
+		"requerido": false
+	}, {
+		"id": "w_med_n",
+		"descripcion": "frecuencia absoluta (número de días para los que hay valor) para Velocidad media mensual elaborada a partir de las observaciones de 07, 13 y 18 UTC.  (Km/h)",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "w_med_q1",
+		"descripcion": "primer quintil para Velocidad media mensual elaborada a partir de las observaciones de 07, 13 y 18 UTC.  (Km/h)",
+		"tipo_datos": "string",
+		"unidad": "Km/h",
+		"requerido": false
+	}, {
+		"id": "w_med_q2",
+		"descripcion": "segundo quintil para Velocidad media mensual elaborada a partir de las observaciones de 07, 13 y 18 UTC.  (Km/h)",
+		"tipo_datos": "string",
+		"unidad": "Km/h",
+		"requerido": false
+	}, {
+		"id": "w_med_q3",
+		"descripcion": "tercer quintil para Velocidad media mensual elaborada a partir de las observaciones de 07, 13 y 18 UTC.  (Km/h)",
+		"tipo_datos": "string",
+		"unidad": "Km/h",
+		"requerido": false
+	}, {
+		"id": "w_med_q4",
+		"descripcion": "cuarto quintil para Velocidad media mensual elaborada a partir de las observaciones de 07, 13 y 18 UTC.  (Km/h)",
+		"tipo_datos": "string",
+		"unidad": "Km/h",
+		"requerido": false
+	}, {
+		"id": "w_med_s",
+		"descripcion": "desviación típica para Velocidad media mensual elaborada a partir de las observaciones de 07, 13 y 18 UTC.  (Km/h)",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "w_racha_cv",
+		"descripcion": "coeficiente de variación de Pearson para Dirección (decenas de grado), Velocidad (m/sg) y fecha de la racha máxima en el mes/año",
+		"tipo_datos": "string",
+		"requerido": false
+	}, {
+		"id": "w_racha_max",
+		"descripcion": "valor máximo para Dirección (decenas de grado), Velocidad (m/sg) y fecha de la racha máxima en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "Km/h",
+		"requerido": false
+	}, {
+		"id": "w_racha_md",
+		"descripcion": "media aritmetica para Dirección (decenas de grado), Velocidad (m/sg) y fecha de la racha máxima en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "Km/h",
+		"requerido": false
+	}, {
+		"id": "w_racha_min",
+		"descripcion": "valor mínimo para Dirección (decenas de grado), Velocidad (m/sg) y fecha de la racha máxima en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "Km/h",
+		"requerido": false
+	}, {
+		"id": "w_racha_mn",
+		"descripcion": "mediana para Dirección (decenas de grado), Velocidad (m/sg) y fecha de la racha máxima en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "Km/h",
+		"requerido": false
+	}, {
+		"id": "w_racha_n",
+		"descripcion": "frecuencia absoluta (número de días para los que hay valor) para Dirección (decenas de grado), Velocidad (m/sg) y fecha de la racha máxima en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "número de días",
+		"requerido": false
+	}, {
+		"id": "w_racha_q1",
+		"descripcion": "primer quintil para Dirección (decenas de grado), Velocidad (m/sg) y fecha de la racha máxima en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "Km/h",
+		"requerido": false
+	}, {
+		"id": "w_racha_q2",
+		"descripcion": "segundo quintil para Dirección (decenas de grado), Velocidad (m/sg) y fecha de la racha máxima en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "Km/h",
+		"requerido": false
+	}, {
+		"id": "w_racha_q3",
+		"descripcion": "tercer quintil para Dirección (decenas de grado), Velocidad (m/sg) y fecha de la racha máxima en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "Km/h",
+		"requerido": false
+	}, {
+		"id": "w_racha_q4",
+		"descripcion": "cuarto quintil para Dirección (decenas de grado), Velocidad (m/sg) y fecha de la racha máxima en el mes/año",
+		"tipo_datos": "string",
+		"unidad": "Km/h",
+		"requerido": false
+	}, {
+		"id": "w_racha_s",
+		"descripcion": "desviación típica para Dirección (decenas de grado), Velocidad (m/sg) y fecha de la racha máxima en el mes/año",
+		"tipo_datos": "string",
+		"requerido": false
+	}]
+
+}

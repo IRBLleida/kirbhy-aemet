@@ -1,1 +1,489 @@
 # kirbhy-aemet
+
+## Climatological entries:
+
+ - indicativo climatológico
+ - coeficiente de variación de Pearson para tensión de vapor media
+ - valor máximo para tensión de vapor media (décimas hPa)
+ - media aritmetica para tensión de vapor media (décimas hPa)
+ - valor mínimo para tensión de vapor media (décimas hPa)
+ - mediana para tensión de vapor media (décimas hPa)
+ - frecuencia absoluta (número de días para los que hay valor) para tensión de vapor media
+ - primer quintil para tensión de vapor media (décimas hPa)
+ - segundo quintil para tensión de vapor media (décimas hPa)
+ - tercer quintil para tensión de vapor media (décimas hPa)
+ - cuarto quintil para tensión de vapor media (décimas hPa)
+ - desviación típica para tensión de vapor media (décimas hPa)
+ - coeficiente de variación de Pearson para Evaporación total mensual/anual (décimas de mm)
+ - valor máximo para Evaporación total mensual/anual (décimas de mm)
+ - media aritmetica para Evaporación total mensual/anual (décimas de mm)
+ - valor mínimo para Evaporación total mensual/anual (décimas de mm)
+ - mediana para Evaporación total mensual/anual (décimas de mm)
+ - frecuencia absoluta (número de días para los que hay valor) para Evaporación total mensual/anual (décimas de mm)
+ - primer quintil para Evaporación total mensual/anual (décimas de mm)
+ - segundo quintil para Evaporación total mensual/anual (décimas de mm)
+ - tercer quintil para Evaporación total mensual/anual (décimas de mm)
+ - cuarto quintil para Evaporación total mensual/anual (décimas de mm)
+ - desviación típica para Evaporación total mensual/anual (décimas de mm)
+ - coeficiente de variación de Pearson para Radiación global mensual/anual (decenas de Kj.m-2)
+ - valor máximo para Radiación global mensual/anual (decenas de Kj.m-2)
+ - media aritmetica para Radiación global mensual/anual (decenas de Kj.m-2)
+ - valor mínimo para Radiación global mensual/anual (decenas de Kj.m-2)
+ - mediana para Radiación global mensual/anual (decenas de Kj.m-2)
+ - frecuencia absoluta (número de días para los que hay valor) para Radiación global mensual/anual (decenas de Kj.m-2)
+ - primer quintil para Radiación global mensual/anual (decenas de Kj.m-2)
+ - segundo quintil para Radiación global mensual/anual (decenas de Kj.m-2)
+ - tercer quintil para Radiación global mensual/anual (decenas de Kj.m-2)
+ - cuarto quintil para Radiación global mensual/anual (decenas de Kj.m-2)
+ - desviación típica para Radiación global mensual/anual (decenas de Kj.m-2)
+ - coeficiente de variación de Pearson para Humedad relativa media mensual/anual (%)
+ - valor máximo para Humedad relativa media mensual/anual (%)
+ - media aritmetica para Humedad relativa media mensual/anual (%)
+ - valor mínimo para Humedad relativa media mensual/anual (%)
+ - mediana para Humedad relativa media mensual/anual (%)
+ - frecuencia absoluta (número de días para los que hay valor) para Humedad relativa media mensual/anual (%)
+ - primer quintil para Humedad relativa media mensual/anual (%)
+ - segundo quintil para Humedad relativa media mensual/anual (%)
+ - tercer quintil para Humedad relativa media mensual/anual (%)
+ - cuarto quintil para Humedad relativa media mensual/anual (%)
+ - desviación típica para Humedad relativa media mensual/anual (%)
+ - coeficiente de variación de Pearson para Media mensual/anual de la insolación diaria (horas)
+ - valor máximo para Media mensual/anual de la insolación diaria (horas)
+ - media aritmetica para Media mensual/anual de la insolación diaria (horas)
+ - valor mínimo para Media mensual/anual de la insolación diaria (horas)
+ - mediana para Media mensual/anual de la insolación diaria (horas)
+ - frecuencia absoluta (número de días para los que hay valor) para Media mensual/anual de la insolación diaria (horas)
+ - primer quintil para Media mensual/anual de la insolación diaria (horas)
+ - segundo quintil para Media mensual/anual de la insolación diaria (horas)
+ - tercer quintil para Media mensual/anual de la insolación diaria (horas)
+ - cuarto quintil para Media mensual/anual de la insolación diaria (horas)
+ - desviación típica para Media mensual/anual de la insolación diaria (horas)
+ - coeficiente de variación de Pearson para Nº de días cubiertos en el mes/año
+ - valor máximo para Nº de días cubiertos en el mes/año
+ - media aritmetica para Nº de días cubiertos en el mes/año
+ - valor mínimo para Nº de días cubiertos en el mes/año
+ - mediana para Nº de días cubiertos en el mes/año
+ - frecuencia absoluta (número de días para los que hay valor) para Nº de días cubiertos en el mes/año
+ - primer quintil para Nº de días cubiertos en el mes/año
+ - segundo quintil para Nº de días cubiertos en el mes/año
+ - tercer quintil para Nº de días cubiertos en el mes/año
+ - cuarto quintil para Nº de días cubiertos en el mes/año
+ - desviación típica para Nº de días cubiertos en el mes/año
+ - coeficiente de variación de Pearson para  Nº de días de niebla en el mes/año
+ - valor máximo para  Nº de días de niebla en el mes/año
+ - media aritmetica para  Nº de días de niebla en el mes/año
+ - valor mínimo para  Nº de días de niebla en el mes/año
+ - mediana para  Nº de días de niebla en el mes/año
+ - frecuencia absoluta (número de días para los que hay valor) para  Nº de días de niebla en el mes/año
+ - primer quintil para  Nº de días de niebla en el mes/año
+ - segundo quintil para  Nº de días de niebla en el mes/año
+ - tercer quintil para  Nº de días de niebla en el mes/año
+ - cuarto quintil para  Nº de días de niebla en el mes/año
+ - desviación típica para  Nº de días de niebla en el mes/año
+ - coeficiente de variación de Pearson para  Nº de días de granizo en el mes/año
+ - valor máximo para  Nº de días de granizo en el mes/año
+ - media aritmetica para  Nº de días de granizo en el mes/año
+ - valor mínimo para  Nº de días de granizo en el mes/año
+ - mediana para  Nº de días de granizo en el mes/año
+ - frecuencia absoluta (número de días para los que hay valor) para  Nº de días de granizo en el mes/año
+ - primer quintil para  Nº de días de granizo en el mes/año
+ - segundo quintil para  Nº de días de granizo en el mes/año
+ - tercer quintil para  Nº de días de granizo en el mes/año
+ - cuarto quintil para  Nº de días de granizo en el mes/año
+ - desviación típica para  Nº de días de granizo en el mes/año
+ - coeficiente de variación de Pearson para Nº de días de lluvia en el mes/año
+ - valor máximo para Nº de días de lluvia en el mes/año
+ - media aritmetica para Nº de días de lluvia en el mes/año
+ - valor mínimo para Nº de días de lluvia en el mes/año
+ - mediana para Nº de días de lluvia en el mes/año
+ - frecuencia absoluta (número de días para los que hay valor) para Nº de días de lluvia en el mes/año
+ - primer quintil para Nº de días de lluvia en el mes/año
+ - segundo quintil para Nº de días de lluvia en el mes/año
+ - tercer quintil para Nº de días de lluvia en el mes/año
+ - cuarto quintil para Nº de días de lluvia en el mes/año
+ - desviación típica para Nº de días de lluvia en el mes/año
+ - coeficiente de variación de Pearson para Nº de días de nieve en el mes/año
+ - valor máximo para Nº de días de nieve en el mes/año
+ - media aritmetica para Nº de días de nieve en el mes/año
+ - valor mínimo para Nº de días de nieve en el mes/año
+ - mediana para Nº de días de nieve en el mes/año
+ - frecuencia absoluta (número de días para los que hay valor) para Nº de días de nieve en el mes/año
+ - primer quintil para Nº de días de nieve en el mes/año
+ - segundo quintil para Nº de días de nieve en el mes/año
+ - tercer quintil para Nº de días de nieve en el mes/año
+ - cuarto quintil para Nº de días de nieve en el mes/año
+ - desviación típica para Nº de días de nieve en el mes/año
+ - coeficiente de variación de Pearson para Nº de días nubosos en el mes/año
+ - valor máximo para Nº de días nubosos en el mes/año
+ - media aritmetica para Nº de días nubosos en el mes/año
+ - valor mínimo para Nº de días nubosos en el mes/año
+ - mediana para Nº de días nubosos en el mes/año
+ - frecuencia absoluta (número de días para los que hay valor) para Nº de días nubosos en el mes/año
+ - primer quintil para Nº de días nubosos en el mes/año
+ - segundo quintil para Nº de días nubosos en el mes/año
+ - tercer quintil para Nº de días nubosos en el mes/año
+ - cuarto quintil para Nº de días nubosos en el mes/año
+ - desviación típica para Nº de días nubosos en el mes/año
+ - coeficiente de variación de Pearson para Nº de días de precipitación apreciable (>=0,1 mm) en el mes/año
+ - valor máximo para Nº de días de precipitación apreciable (>=0,1 mm) en el mes/año
+ - media aritmetica para Nº de días de precipitación apreciable (>=0,1 mm) en el mes/año
+ - valor mínimo para Nº de días de precipitación apreciable (>=0,1 mm) en el mes/año
+ - mediana para Nº de días de precipitación apreciable (>=0,1 mm) en el mes/año
+ - frecuencia absoluta (número de días para los que hay valor) para Nº de días de precipitación apreciable (>=0,1 mm) en el mes/año
+ - primer quintil para Nº de días de precipitación apreciable (>=0,1 mm) en el mes/año
+ - segundo quintil para Nº de días de precipitación apreciable (>=0,1 mm) en el mes/año
+ - tercer quintil para Nº de días de precipitación apreciable (>=0,1 mm) en el mes/año
+ - cuarto quintil para Nº de días de precipitación apreciable (>=0,1 mm) en el mes/año
+ - desviación típica para Nº de días de precipitación apreciable (>=0,1 mm) en el mes/año
+ - coeficiente de variación de Pearson para Nº de días de precipitación mayor o igual que 1mm en el mes/año
+ - valor máximo para Nº de días de precipitación mayor o igual que 1mm en el mes/año
+ - media aritmetica para Nº de días de precipitación mayor o igual que 1mm en el mes/año
+ - valor mínimo para Nº de días de precipitación mayor o igual que 1mm en el mes/año
+ - mediana para Nº de días de precipitación mayor o igual que 1mm en el mes/año
+ - frecuencia absoluta (número de días para los que hay valor) para Nº de días de precipitación mayor o igual que 1mm en el mes/año
+ - primer quintil para Nº de días de precipitación mayor o igual que 1mm en el mes/año
+ - segundo quintil para Nº de días de precipitación mayor o igual que 1mm en el mes/año
+ - tercer quintil para Nº de días de precipitación mayor o igual que 1mm en el mes/año
+ - cuarto quintil para Nº de días de precipitación mayor o igual que 1mm en el mes/año
+ - desviación típica para Nº de días de precipitación mayor o igual que 1mm en el mes/año
+ - coeficiente de variación de Pearson para Nº de días de precipitación mayor o igual que 10mm en el mes/año
+ - valor máximo para Nº de días de precipitación mayor o igual que 10mm en el mes/año
+ - media aritmetica para Nº de días de precipitación mayor o igual que 10mm en el mes/año
+ - valor mínimo para Nº de días de precipitación mayor o igual que 10mm en el mes/año
+ - mediana para Nº de días de precipitación mayor o igual que 10mm en el mes/año
+ - frecuencia absoluta (número de días para los que hay valor) para Nº de días de precipitación mayor o igual que 10mm en el mes/año
+ - primer quintil para Nº de días de precipitación mayor o igual que 10mm en el mes/año
+ - segundo quintil para Nº de días de precipitación mayor o igual que 10mm en el mes/año
+ - tercer quintil para Nº de días de precipitación mayor o igual que 10mm en el mes/año
+ - cuarto quintil para Nº de días de precipitación mayor o igual que 10mm en el mes/año
+ - desviación típica para Nº de días de precipitación mayor o igual que 10mm en el mes/año
+ - coeficiente de variación de Pearson para Nº de días de precipitación mayor o igual que 30mm en el mes/año
+ - valor máximo para Nº de días de precipitación mayor o igual que 30mm en el mes/año
+ - media aritmetica para Nº de días de precipitación mayor o igual que 30mm en el mes/año
+ - valor mínimo para Nº de días de precipitación mayor o igual que 30mm en el mes/año
+ - mediana para Nº de días de precipitación mayor o igual que 30mm en el mes/año
+ - frecuencia absoluta (número de días para los que hay valor) para Nº de días de precipitación mayor o igual que 30mm en el mes/año
+ - primer quintil para Nº de días de precipitación mayor o igual que 30mm en el mes/año
+ - segundo quintil para Nº de días de precipitación mayor o igual que 30mm en el mes/año
+ - tercer quintil para Nº de días de precipitación mayor o igual que 30mm en el mes/año
+ - cuarto quintil para Nº de días de precipitación mayor o igual que 30mm en el mes/año
+ - desviación típica para Nº de días de precipitación mayor o igual que 30mm en el mes/año
+ - coeficiente de variación de Pearson para  Nº de días de temperatura mínima menor o igual que 0 grados celsius
+ - valor máximo para  Nº de días de temperatura mínima menor o igual que 0 grados celsius
+ - media aritmetica para  Nº de días de temperatura mínima menor o igual que 0 grados celsius
+ - valor mínimo para  Nº de días de temperatura mínima menor o igual que 0 grados celsius
+ - mediana para  Nº de días de temperatura mínima menor o igual que 0 grados celsius
+ - frecuencia absoluta (número de días para los que hay valor) para  Nº de días de temperatura mínima menor o igual que 0 grados celsius
+ - primer quintil para  Nº de días de temperatura mínima menor o igual que 0 grados celsius
+ - segundo quintil para  Nº de días de temperatura mínima menor o igual que 0 grados celsius
+ - tercer quintil para  Nº de días de temperatura mínima menor o igual que 0 grados celsius
+ - cuarto quintil para  Nº de días de temperatura mínima menor o igual que 0 grados celsius
+ - desviación típica para  Nº de días de temperatura mínima menor o igual que 0 grados celsius
+ - coeficiente de variación de Pearson para  Nº de días de temperatura máxima mayor o igual que 30 grados celsius
+ - valor máximo para  Nº de días de temperatura máxima mayor o igual que 30 grados celsius
+ - media aritmetica para  Nº de días de temperatura máxima mayor o igual que 30 grados celsius
+ - valor mínimo para  Nº de días de temperatura máxima mayor o igual que 30 grados celsius
+ - mediana para  Nº de días de temperatura máxima mayor o igual que 30 grados celsius
+ - frecuencia absoluta (número de días para los que hay valor) para  Nº de días de temperatura máxima mayor o igual que 30 grados celsius
+ - primer quintil para  Nº de días de temperatura máxima mayor o igual que 30 grados celsius
+ - segundo quintil para  Nº de días de temperatura máxima mayor o igual que 30 grados celsius
+ - tercer quintil para  Nº de días de temperatura máxima mayor o igual que 30 grados celsius
+ - cuarto quintil para  Nº de días de temperatura máxima mayor o igual que 30 grados celsius
+ - desviación típica para  Nº de días de temperatura máxima mayor o igual que 30 grados celsius
+ - coeficiente de variación de Pearson para  Nº de días de tormenta en el mes/año
+ - valor máximo para  Nº de días de tormenta en el mes/año
+ - media aritmetica para  Nº de días de tormenta en el mes/año
+ - valor mínimo para  Nº de días de tormenta en el mes/año
+ - mediana para  Nº de días de tormenta en el mes/año
+ - frecuencia absoluta (número de días para los que hay valor) para  Nº de días de tormenta en el mes/año
+ - primer quintil para  Nº de días de tormenta en el mes/año
+ - segundo quintil para  Nº de días de tormenta en el mes/año
+ - tercer quintil para  Nº de días de tormenta en el mes/año
+ - cuarto quintil para  Nº de días de tormenta en el mes/año
+ - desviación típica para  Nº de días de tormenta en el mes/año
+ - coeficiente de variación de Pearson para  Nº de días con visibilidad inferior a 50 m. en el mes/año
+ - valor máximo para  Nº de días con visibilidad inferior a 50 m. en el mes/año
+ - media aritmetica para  Nº de días con visibilidad inferior a 50 m. en el mes/año
+ - valor mínimo para  Nº de días con visibilidad inferior a 50 m. en el mes/año
+ - mediana para  Nº de días con visibilidad inferior a 50 m. en el mes/año
+ - frecuencia absoluta (número de días para los que hay valor) para  Nº de días con visibilidad inferior a 50 m. en el mes/año
+ - primer quintil para  Nº de días con visibilidad inferior a 50 m. en el mes/año
+ - segundo quintil para  Nº de días con visibilidad inferior a 50 m. en el mes/año
+ - tercer quintil para  Nº de días con visibilidad inferior a 50 m. en el mes/año
+ - cuarto quintil para  Nº de días con visibilidad inferior a 50 m. en el mes/año
+ - desviación típica para  Nº de días con visibilidad inferior a 50 m. en el mes/año
+ - coeficiente de variación de Pearson para   Nº de días con visibilidad superior o igual a 50 m. e inferior a 100 m. en el mes/año
+ - valor máximo para   Nº de días con visibilidad superior o igual a 50 m. e inferior a 100 m. en el mes/año
+ - media aritmetica para   Nº de días con visibilidad superior o igual a 50 m. e inferior a 100 m. en el mes/año
+ - valor mínimo para   Nº de días con visibilidad superior o igual a 50 m. e inferior a 100 m. en el mes/año
+ - mediana para   Nº de días con visibilidad superior o igual a 50 m. e inferior a 100 m. en el mes/año
+ - frecuencia absoluta (número de días para los que hay valor) para   Nº de días con visibilidad superior o igual a 50 m. e inferior a 100 m. en el mes/año
+ - primer quintil para   Nº de días con visibilidad superior o igual a 50 m. e inferior a 100 m. en el mes/año
+ - segundo quintil para   Nº de días con visibilidad superior o igual a 50 m. e inferior a 100 m. en el mes/año
+ - tercer quintil para   Nº de días con visibilidad superior o igual a 50 m. e inferior a 100 m. en el mes/año
+ - cuarto quintil para   Nº de días con visibilidad superior o igual a 50 m. e inferior a 100 m. en el mes/año
+ - desviación típica para   Nº de días con visibilidad superior o igual a 50 m. e inferior a 100 m. en el mes/año
+ - coeficiente de variación de Pearson para  Nº de días con visibilidad  superior o igual a 100 m. e inferior a 1 km. en el mes/año
+ - valor máximo para  Nº de días con visibilidad  superior o igual a 100 m. e inferior a 1 km. en el mes/año
+ - media aritmetica para  Nº de días con visibilidad  superior o igual a 100 m. e inferior a 1 km. en el mes/año
+ - valor mínimo para  Nº de días con visibilidad  superior o igual a 100 m. e inferior a 1 km. en el mes/año
+ - mediana para  Nº de días con visibilidad  superior o igual a 100 m. e inferior a 1 km. en el mes/año
+ - frecuencia absoluta (número de días para los que hay valor) para  Nº de días con visibilidad  superior o igual a 100 m. e inferior a 1 km. en el mes/año
+ - primer quintil para  Nº de días con visibilidad  superior o igual a 100 m. e inferior a 1 km. en el mes/año
+ - segundo quintil para  Nº de días con visibilidad  superior o igual a 100 m. e inferior a 1 km. en el mes/año
+ - tercer quintil para  Nº de días con visibilidad  superior o igual a 100 m. e inferior a 1 km. en el mes/año
+ - cuarto quintil para  Nº de días con visibilidad  superior o igual a 100 m. e inferior a 1 km. en el mes/año
+ - desviación típica para  Nº de días con visibilidad  superior o igual a 100 m. e inferior a 1 km. en el mes/año
+ - coeficiente de variación de Pearson para Nº de días de velocidad del viento mayor o igual a 55 Km/h en el mes/año
+ - valor máximo para Nº de días de velocidad del viento mayor o igual a 55 Km/h en el mes/año
+ - media aritmetica para Nº de días de velocidad del viento mayor o igual a 55 Km/h en el mes/año
+ - valor mínimo para Nº de días de velocidad del viento mayor o igual a 55 Km/h en el mes/año
+ - mediana para Nº de días de velocidad del viento mayor o igual a 55 Km/h en el mes/año
+ - frecuencia absoluta (número de días para los que hay valor) para Nº de días de velocidad del viento mayor o igual a 55 Km/h en el mes/año
+ - primer quintil para Nº de días de velocidad del viento mayor o igual a 55 Km/h en el mes/año
+ - segundo quintil para Nº de días de velocidad del viento mayor o igual a 55 Km/h en el mes/año
+ - tercer quintil para Nº de días de velocidad del viento mayor o igual a 55 Km/h en el mes/año
+ - cuarto quintil para Nº de días de velocidad del viento mayor o igual a 55 Km/h en el mes/año
+ - desviación típica para Nº de días de velocidad del viento mayor o igual a 55 Km/h en el mes/año
+ - coeficiente de variación de Pearson para Nº de días de velocidad del viento mayor o igual a 91 Km/h en el mes/año
+ - valor máximo para Nº de días de velocidad del viento mayor o igual a 91 Km/h en el mes/año
+ - media aritmetica para Nº de días de velocidad del viento mayor o igual a 91 Km/h en el mes/año
+ - valor mínimo para Nº de días de velocidad del viento mayor o igual a 91 Km/h en el mes/año
+ - mediana para Nº de días de velocidad del viento mayor o igual a 91 Km/h en el mes/año
+ - frecuencia absoluta (número de días para los que hay valor) para Nº de días de velocidad del viento mayor o igual a 91 Km/h en el mes/año
+ - primer quintil para Nº de días de velocidad del viento mayor o igual a 91 Km/h en el mes/año
+ - segundo quintil para Nº de días de velocidad del viento mayor o igual a 91 Km/h en el mes/año
+ - tercer quintil para Nº de días de velocidad del viento mayor o igual a 91 Km/h en el mes/año
+ - cuarto quintil para Nº de días de velocidad del viento mayor o igual a 91 Km/h en el mes/año
+ - desviación típica para Nº de días de velocidad del viento mayor o igual a 91 Km/h en el mes/año
+ - coeficiente de variación de Pearson para Precipitación máxima diaria (mm) del mes/año y fecha
+ - valor máximo para Precipitación máxima diaria (mm) del mes/año y fecha
+ - media aritmetica para Precipitación máxima diaria (mm) del mes/año y fecha
+ - valor mínimo para Precipitación máxima diaria (mm) del mes/año y fecha
+ - mediana para Precipitación máxima diaria (mm) del mes/año y fecha
+ - frecuencia absoluta (número de días para los que hay valor) para Precipitación máxima diaria (mm) del mes/año y fecha
+ - primer quintil para Precipitación máxima diaria (mm) del mes/año y fecha
+ - segundo quintil para Precipitación máxima diaria (mm) del mes/año y fecha
+ - tercer quintil para Precipitación máxima diaria (mm) del mes/año y fecha
+ - cuarto quintil para Precipitación máxima diaria (mm) del mes/año y fecha
+ - desviación típica para Precipitación máxima diaria (mm) del mes/año y fecha
+ - coeficiente de variación de Pearson para Precipitación total mensual/anual (mm)
+ - valor máximo para Precipitación total mensual/anual (mm)
+ - media aritmetica para Precipitación total mensual/anual (mm)
+ - valor mínimo para Precipitación total mensual/anual (mm)
+ - mediana para Precipitación total mensual/anual (mm)
+ - frecuencia absoluta (número de días para los que hay valor) para Precipitación total mensual/anual (mm)
+ - primer quintil para Precipitación total mensual/anual (mm)
+ - segundo quintil para Precipitación total mensual/anual (mm)
+ - tercer quintil para Precipitación total mensual/anual (mm)
+ - cuarto quintil para Precipitación total mensual/anual (mm)
+ - desviación típica para Precipitación total mensual/anual (mm)
+ - coeficiente de variación de Pearson para Porcentaje medio mensual de la insolación diaria frente a la insolación teórica. (%)
+ - valor máximo para Porcentaje medio mensual de la insolación diaria frente a la insolación teórica. (%)
+ - media aritmetica para Porcentaje medio mensual de la insolación diaria frente a la insolación teórica. (%)
+ - valor mínimo para Porcentaje medio mensual de la insolación diaria frente a la insolación teórica. (%)
+ - mediana para Porcentaje medio mensual de la insolación diaria frente a la insolación teórica. (%)
+ - frecuencia absoluta (número de días para los que hay valor) para Porcentaje medio mensual de la insolación diaria frente a la insolación teórica. (%)
+ - primer quintil para Porcentaje medio mensual de la insolación diaria frente a la insolación teórica. (%)
+ - segundo quintil para Porcentaje medio mensual de la insolación diaria frente a la insolación teórica. (%)
+ - tercer quintil para Porcentaje medio mensual de la insolación diaria frente a la insolación teórica. (%)
+ - cuarto quintil para Porcentaje medio mensual de la insolación diaria frente a la insolación teórica. (%)
+ - desviación típica para Porcentaje medio mensual de la insolación diaria frente a la insolación teórica. (%)
+ - coeficiente de variación de Pearson para Presión media mensual/anual al nivel del mar (hPa)
+ - valor máximo para Presión media mensual/anual al nivel del mar (hPa)
+ - media aritmetica para Presión media mensual/anual al nivel del mar (hPa)
+ - valor mínimo para Presión media mensual/anual al nivel del mar (hPa)
+ - mediana para Presión media mensual/anual al nivel del mar (hPa)
+ - frecuencia absoluta (número de días para los que hay valor) para Presión media mensual/anual al nivel del mar (hPa)
+ - primer quintil para Presión media mensual/anual al nivel del mar (hPa)
+ - segundo quintil para Presión media mensual/anual al nivel del mar (hPa)
+ - tercer quintil para Presión media mensual/anual al nivel del mar (hPa)
+ - cuarto quintil para Presión media mensual/anual al nivel del mar (hPa)
+ - desviación típica para Presión media mensual/anual al nivel del mar (hPa)
+ - coeficiente de variación de Pearson para Presión máxima absoluta mensual/anual y fecha (hPa)
+ - valor máximo para Presión máxima absoluta mensual/anual y fecha (hPa)
+ - media aritmetica para Presión máxima absoluta mensual/anual y fecha (hPa)
+ - valor mínimo para Presión máxima absoluta mensual/anual y fecha (hPa)
+ - mediana para Presión máxima absoluta mensual/anual y fecha (hPa)
+ - frecuencia absoluta (número de días para los que hay valor) para Presión máxima absoluta mensual/anual y fecha (hPa)
+ - primer quintil para Presión máxima absoluta mensual/anual y fecha (hPa)
+ - segundo quintil para Presión máxima absoluta mensual/anual y fecha (hPa)
+ - tercer quintil para Presión máxima absoluta mensual/anual y fecha (hPa)
+ - cuarto quintil para Presión máxima absoluta mensual/anual y fecha (hPa)
+ - desviación típica para Presión máxima absoluta mensual/anual y fecha (hPa)
+ - coeficiente de variación de Pearson para Presión media mensual/anual al nivel de la estación (hPa)
+ - valor máximo para Presión media mensual/anual al nivel de la estación (hPa)
+ - media aritmetica para Presión media mensual/anual al nivel de la estación (hPa)
+ - valor mínimo para Presión media mensual/anual al nivel de la estación (hPa)
+ - mediana para Presión media mensual/anual al nivel de la estación (hPa)
+ - frecuencia absoluta (número de días para los que hay valor) para Presión media mensual/anual al nivel de la estación (hPa)
+ - primer quintil para Presión media mensual/anual al nivel de la estación (hPa)
+ - segundo quintil para Presión media mensual/anual al nivel de la estación (hPa)
+ - tercer quintil para Presión media mensual/anual al nivel de la estación (hPa)
+ - cuarto quintil para Presión media mensual/anual al nivel de la estación (hPa)
+ - desviación típica para Presión media mensual/anual al nivel de la estación (hPa)
+ - coeficiente de variación de Pearson para Presión máxima mínima mensual/anual y fecha (hPa)
+ - valor máximo para Presión máxima mínima mensual/anual y fecha (hPa)
+ - media aritmetica para Presión máxima mínima mensual/anual y fecha (hPa)
+ - valor mínimo para Presión máxima mínima mensual/anual y fecha (hPa)
+ - mediana para Presión máxima mínima mensual/anual y fecha (hPa)
+ - frecuencia absoluta (número de días para los que hay valor) para Presión máxima mínima mensual/anual y fecha (hPa)
+ - primer quintil para Presión máxima mínima mensual/anual y fecha (hPa)
+ - segundo quintil para Presión máxima mínima mensual/anual y fecha (hPa)
+ - tercer quintil para Presión máxima mínima mensual/anual y fecha (hPa)
+ - cuarto quintil para Presión máxima mínima mensual/anual y fecha (hPa)
+ - desviación típica para Presión máxima mínima mensual/anual y fecha (hPa)
+ - coeficiente de variación de Pearson para Temperatura mínima absoluta del mes/año y fecha ( grados celsius)
+ - valor máximo para Temperatura mínima absoluta del mes/año y fecha ( grados celsius)
+ - media aritmetica para Temperatura mínima absoluta del mes/año y fecha ( grados celsius)
+ - valor mínimo para Temperatura mínima absoluta del mes/año y fecha ( grados celsius)
+ - mediana para Temperatura mínima absoluta del mes/año y fecha ( grados celsius)
+ - frecuencia absoluta (número de días para los que hay valor) para Temperatura mínima absoluta del mes/año y fecha ( grados celsius)
+ - primer quintil para Temperatura mínima absoluta del mes/año y fecha ( grados celsius)
+ - segundo quintil para Temperatura mínima absoluta del mes/año y fecha ( grados celsius)
+ - tercer quintil para Temperatura mínima absoluta del mes/año y fecha ( grados celsius)
+ - cuarto quintil para Temperatura mínima absoluta del mes/año y fecha ( grados celsius)
+ - desviación típica para Temperatura mínima absoluta del mes/año y fecha ( grados celsius)
+ - coeficiente de variación de Pearson para Temperatura máxima absoluta del mes/año y fecha ( grados celsius)
+ - valor máximo para Temperatura máxima absoluta del mes/año y fecha ( grados celsius)
+ - media aritmetica para Temperatura máxima absoluta del mes/año y fecha ( grados celsius)
+ - valor mínimo para Temperatura máxima absoluta del mes/año y fecha ( grados celsius)
+ - mediana para Temperatura máxima absoluta del mes/año y fecha ( grados celsius)
+ - frecuencia absoluta (número de días para los que hay valor) para Temperatura máxima absoluta del mes/año y fecha ( grados celsius)
+ - primer quintil para Temperatura máxima absoluta del mes/año y fecha ( grados celsius)
+ - segundo quintil para Temperatura máxima absoluta del mes/año y fecha ( grados celsius)
+ - tercer quintil para Temperatura máxima absoluta del mes/año y fecha ( grados celsius)
+ - cuarto quintil para Temperatura máxima absoluta del mes/año y fecha ( grados celsius)
+ - desviación típica para Temperatura máxima absoluta del mes/año y fecha ( grados celsius)
+ - coeficiente de variación de Pearson para Temperatura mínima absoluta del mes/año y fecha ( grados celsius)
+ - valor máximo para Temperatura mínima absoluta del mes/año y fecha ( grados celsius)
+ - media aritmetica para Temperatura mínima absoluta del mes/año y fecha ( grados celsius)
+ - valor mínimo para Temperatura mínima absoluta del mes/año y fecha ( grados celsius)
+ - mediana para Temperatura mínima absoluta del mes/año y fecha ( grados celsius)
+ - frecuencia absoluta (número de días para los que hay valor) para Temperatura mínima absoluta del mes/año y fecha ( grados celsius)
+ - primer quintil para Temperatura mínima absoluta del mes/año y fecha ( grados celsius)
+ - segundo quintil para Temperatura mínima absoluta del mes/año y fecha ( grados celsius)
+ - tercer quintil para Temperatura mínima absoluta del mes/año y fecha ( grados celsius)
+ - cuarto quintil para Temperatura mínima absoluta del mes/año y fecha ( grados celsius)
+ - desviación típica para Temperatura mínima absoluta del mes/año y fecha ( grados celsius)
+ - coeficiente de variación de Pearson para Temperatura máxima mas baja del mes/año ( grados celsius)
+ - valor máximo para Temperatura máxima mas baja del mes/año ( grados celsius)
+ - media aritmetica para Temperatura máxima mas baja del mes/año ( grados celsius)
+ - valor mínimo para Temperatura máxima mas baja del mes/año ( grados celsius)
+ - mediana para Temperatura máxima mas baja del mes/año ( grados celsius)
+ - frecuencia absoluta (número de días para los que hay valor) para Temperatura máxima mas baja del mes/año ( grados celsius)
+ - primer quintil para Temperatura máxima mas baja del mes/año ( grados celsius)
+ - segundo quintil para Temperatura máxima mas baja del mes/año ( grados celsius)
+ - tercer quintil para Temperatura máxima mas baja del mes/año ( grados celsius)
+ - cuarto quintil para Temperatura máxima mas baja del mes/año ( grados celsius)
+ - desviación típica para Temperatura máxima mas baja del mes/año ( grados celsius)
+ - coeficiente de variación de Pearson para Temperatura mínima mas alta del mes/año ( grados celsius)
+ - valor máximo para Temperatura mínima mas alta del mes/año ( grados celsius)
+ - media aritmetica para Temperatura mínima mas alta del mes/año ( grados celsius)
+ - valor mínimo para Temperatura mínima mas alta del mes/año ( grados celsius)
+ - mediana para Temperatura mínima mas alta del mes/año ( grados celsius)
+ - frecuencia absoluta (número de días para los que hay valor) para Temperatura mínima mas alta del mes/año ( grados celsius)
+ - primer quintil para Temperatura mínima mas alta del mes/año ( grados celsius)
+ - segundo quintil para Temperatura mínima mas alta del mes/año ( grados celsius)
+ - tercer quintil para Temperatura mínima mas alta del mes/año ( grados celsius)
+ - cuarto quintil para Temperatura mínima mas alta del mes/año ( grados celsius)
+ - desviación típica para Temperatura mínima mas alta del mes/año ( grados celsius)
+ - coeficiente de variación de Pearson para Temperatura media mensual/anual de las máximas ( grados celsius)
+ - valor máximo para Temperatura media mensual/anual de las máximas ( grados celsius)
+ - media aritmetica para Temperatura media mensual/anual de las máximas ( grados celsius)
+ - valor mínimo para Temperatura media mensual/anual de las máximas ( grados celsius)
+ - mediana para Temperatura media mensual/anual de las máximas ( grados celsius)
+ - frecuencia absoluta (número de días para los que hay valor) para Temperatura media mensual/anual de las máximas ( grados celsius)
+ - primer quintil para Temperatura media mensual/anual de las máximas ( grados celsius)
+ - segundo quintil para Temperatura media mensual/anual de las máximas ( grados celsius)
+ - tercer quintil para Temperatura media mensual/anual de las máximas ( grados celsius)
+ - cuarto quintil para Temperatura media mensual/anual de las máximas ( grados celsius)
+ - desviación típica para Temperatura media mensual/anual de las máximas ( grados celsius)
+ - coeficiente de variación de Pearson para Temperatura media mensual/anual ( grados celsius)
+ - valor máximo para Temperatura media mensual/anual ( grados celsius)
+ - media aritmetica para Temperatura media mensual/anual ( grados celsius)
+ - valor mínimo para Temperatura media mensual/anual ( grados celsius)
+ - mediana para Temperatura media mensual/anual ( grados celsius)
+ - frecuencia absoluta (número de días para los que hay valor) para Temperatura media mensual/anual ( grados celsius)
+ - primer quintil para Temperatura media mensual/anual ( grados celsius)
+ - segundo quintil para Temperatura media mensual/anual ( grados celsius)
+ - tercer quintil para Temperatura media mensual/anual ( grados celsius)
+ - cuarto quintil para Temperatura media mensual/anual ( grados celsius)
+ - desviación típica para Temperatura media mensual/anual ( grados celsius)
+ - coeficiente de variación de Pearson para Temperatura media mensual/anual de las mínimas ( grados celsius)
+ - valor máximo para Temperatura media mensual/anual de las mínimas ( grados celsius)
+ - media aritmetica para Temperatura media mensual/anual de las mínimas ( grados celsius)
+ - valor mínimo para Temperatura media mensual/anual de las mínimas ( grados celsius)
+ - mediana para Temperatura media mensual/anual de las mínimas ( grados celsius)
+ - frecuencia absoluta (número de días para los que hay valor) para Temperatura media mensual/anual de las mínimas ( grados celsius)
+ - primer quintil para Temperatura media mensual/anual de las mínimas ( grados celsius)
+ - segundo quintil para Temperatura media mensual/anual de las mínimas ( grados celsius)
+ - tercer quintil para Temperatura media mensual/anual de las mínimas ( grados celsius)
+ - cuarto quintil para Temperatura media mensual/anual de las mínimas ( grados celsius)
+ - desviación típica para Temperatura media mensual/anual de las mínimas ( grados celsius)
+ - coeficiente de variación de Pearson para Temperatura media mensual/anual a 10 cm de profundidad ( grados celsius)
+ - valor máximo para Temperatura media mensual/anual a 10 cm de profundidad ( grados celsius)
+ - media aritmetica para Temperatura media mensual/anual a 10 cm de profundidad ( grados celsius)
+ - valor mínimo para Temperatura media mensual/anual a 10 cm de profundidad ( grados celsius)
+ - mediana para Temperatura media mensual/anual a 10 cm de profundidad ( grados celsius)
+ - frecuencia absoluta (número de días para los que hay valor) para Temperatura media mensual/anual a 10 cm de profundidad ( grados celsius)
+ - primer quintil para Temperatura media mensual/anual a 10 cm de profundidad ( grados celsius)
+ - segundo quintil para Temperatura media mensual/anual a 10 cm de profundidad ( grados celsius)
+ - tercer quintil para Temperatura media mensual/anual a 10 cm de profundidad ( grados celsius)
+ - cuarto quintil para Temperatura media mensual/anual a 10 cm de profundidad ( grados celsius)
+ - desviación típica para Temperatura media mensual/anual a 10 cm de profundidad ( grados celsius)
+ - coeficiente de variación de Pearson para Temperatura media mensual/anual a 20 cm de profundidad ( grados celsius)
+ - valor máximo para Temperatura media mensual/anual a 20 cm de profundidad ( grados celsius)
+ - media aritmetica para Temperatura media mensual/anual a 20 cm de profundidad ( grados celsius)
+ - valor mínimo para Temperatura media mensual/anual a 20 cm de profundidad ( grados celsius)
+ - mediana para Temperatura media mensual/anual a 20 cm de profundidad ( grados celsius)
+ - frecuencia absoluta (número de días para los que hay valor) para Temperatura media mensual/anual a 20 cm de profundidad ( grados celsius)
+ - primer quintil para Temperatura media mensual/anual a 20 cm de profundidad ( grados celsius)
+ - segundo quintil para Temperatura media mensual/anual a 20 cm de profundidad ( grados celsius)
+ - tercer quintil para Temperatura media mensual/anual a 20 cm de profundidad ( grados celsius)
+ - cuarto quintil para Temperatura media mensual/anual a 20 cm de profundidad ( grados celsius)
+ - desviación típica para Temperatura media mensual/anual a 20 cm de profundidad ( grados celsius)
+ - coeficiente de variación de Pearson para Temperatura media mensual/anual a 50 cm de profundidad ( grados celsius)
+ - valor máximo para Temperatura media mensual/anual a 50 cm de profundidad ( grados celsius)
+ - media aritmetica para Temperatura media mensual/anual a 50 cm de profundidad ( grados celsius)
+ - valor mínimo para Temperatura media mensual/anual a 50 cm de profundidad ( grados celsius)
+ - mediana para Temperatura media mensual/anual a 50 cm de profundidad ( grados celsius)
+ - frecuencia absoluta (número de días para los que hay valor) para Temperatura media mensual/anual a 50 cm de profundidad ( grados celsius)
+ - primer quintil para Temperatura media mensual/anual a 50 cm de profundidad ( grados celsius)
+ - segundo quintil para Temperatura media mensual/anual a 50 cm de profundidad ( grados celsius)
+ - tercer quintil para Temperatura media mensual/anual a 50 cm de profundidad ( grados celsius)
+ - cuarto quintil para Temperatura media mensual/anual a 50 cm de profundidad ( grados celsius)
+ - desviación típica para Temperatura media mensual/anual a 50 cm de profundidad ( grados celsius)
+ - coeficiente de variación de Pearson para Temperatura mínima mas alta del mes/año ( grados celsius)
+ - valor máximo para Temperatura mínima mas alta del mes/año ( grados celsius)
+ - media aritmetica para Temperatura mínima mas alta del mes/año ( grados celsius)
+ - valor mínimo para Temperatura mínima mas alta del mes/año ( grados celsius)
+ - mediana para Temperatura mínima mas alta del mes/año ( grados celsius)
+ - frecuencia absoluta (número de días para los que hay valor) para Temperatura mínima mas alta del mes/año ( grados celsius)
+ - primer quintil para Temperatura mínima mas alta del mes/año ( grados celsius)
+ - segundo quintil para Temperatura mínima mas alta del mes/año ( grados celsius)
+ - tercer quintil para Temperatura mínima mas alta del mes/año ( grados celsius)
+ - cuarto quintil para Temperatura mínima mas alta del mes/año ( grados celsius)
+ - desviación típica para Temperatura mínima mas alta del mes/año ( grados celsius)
+ - coeficiente de variación de Pearson para Velocidad media mensual elaborada a partir de las observaciones de 07, 13 y 18 UTC.  (Km/h)
+ - valor máximo para Velocidad media mensual elaborada a partir de las observaciones de 07, 13 y 18 UTC.  (Km/h)
+ - media aritmetica para Velocidad media mensual elaborada a partir de las observaciones de 07, 13 y 18 UTC.  (Km/h)
+ - valor mínimo para Velocidad media mensual elaborada a partir de las observaciones de 07, 13 y 18 UTC.  (Km/h)
+ - mediana para Velocidad media mensual elaborada a partir de las observaciones de 07, 13 y 18 UTC.  (Km/h)
+ - frecuencia absoluta (número de días para los que hay valor) para Velocidad media mensual elaborada a partir de las observaciones de 07, 13 y 18 UTC.  (Km/h)
+ - primer quintil para Velocidad media mensual elaborada a partir de las observaciones de 07, 13 y 18 UTC.  (Km/h)
+ - segundo quintil para Velocidad media mensual elaborada a partir de las observaciones de 07, 13 y 18 UTC.  (Km/h)
+ - tercer quintil para Velocidad media mensual elaborada a partir de las observaciones de 07, 13 y 18 UTC.  (Km/h)
+ - cuarto quintil para Velocidad media mensual elaborada a partir de las observaciones de 07, 13 y 18 UTC.  (Km/h)
+ - desviación típica para Velocidad media mensual elaborada a partir de las observaciones de 07, 13 y 18 UTC.  (Km/h)
+ - coeficiente de variación de Pearson para Dirección (decenas de grado), Velocidad (m/sg) y fecha de la racha máxima en el mes/año
+ - valor máximo para Dirección (decenas de grado), Velocidad (m/sg) y fecha de la racha máxima en el mes/año
+ - media aritmetica para Dirección (decenas de grado), Velocidad (m/sg) y fecha de la racha máxima en el mes/año
+ - valor mínimo para Dirección (decenas de grado), Velocidad (m/sg) y fecha de la racha máxima en el mes/año
+ - mediana para Dirección (decenas de grado), Velocidad (m/sg) y fecha de la racha máxima en el mes/año
+ - frecuencia absoluta (número de días para los que hay valor) para Dirección (decenas de grado), Velocidad (m/sg) y fecha de la racha máxima en el mes/año
+ - primer quintil para Dirección (decenas de grado), Velocidad (m/sg) y fecha de la racha máxima en el mes/año
+ - segundo quintil para Dirección (decenas de grado), Velocidad (m/sg) y fecha de la racha máxima en el mes/año
+ - tercer quintil para Dirección (decenas de grado), Velocidad (m/sg) y fecha de la racha máxima en el mes/año
+ - cuarto quintil para Dirección (decenas de grado), Velocidad (m/sg) y fecha de la racha máxima en el mes/año
+ - desviación típica para Dirección (decenas de grado), Velocidad (m/sg) y fecha de la racha máxima en el mes/año
